@@ -35,6 +35,8 @@ main {
 
 footer.mdl-mini-footer {
   bottom: 0;
+  padding: 0.5rem;
+  position: fixed;
   width: 100%;
   z-index: 1;
 }
