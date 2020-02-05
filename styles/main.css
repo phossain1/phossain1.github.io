@@ -1,3 +1,7 @@
+body {
+  padding-bottom: 5rem;
+}
+
 header {
   background: url(../images/heroimage.jpg) center / cover;
   height: 60vh;
