@@ -1,53 +1,58 @@
 body {
-  padding-bottom: 5rem;
-}
-
-header {
-  background: url(../images/heroimage.jpg) center / cover;
-  height: 60vh;
-  justify-content: center;
+  margin: 16px 72px 16px 72px;
   text-align: center;
 }
 
+nav {
+  margin: auto;
+}
+
+.logo, .navbuttons {
+  display: inline-block;
+}
+
+.logo {
+  float: left;
+}
+
+.navbuttons {
+  float: right;
+  padding: auto;
+  margin: auto;
+}
+
+li {
+  padding: 24px;
+  display: inline-block;
+  font-family: Karla;
+}
+
+.header {
+  justify-content: center;
+}
+
+.geodesign {
+
+}
+
+
+
 h1 {
-  color: hsla(0, 0%, 100%, 0.9);
+  color: black;
+  font-family: Poppins;
+  font-size: 34px;
   font-weight: bold;
 }
 
-.slogan {
-  color: hsla(0, 0%, 100%, 0.7);
-  font-weight: lighter;
-  font-size: 1.6rem;
-  font-weight: lighter;
+p {
+  font-size: 20px;
+  font-family: Karla;
 }
 
-main {
-  max-width: 900px;
-}
 
-.project-description {
-  padding-left: 0;
-}
 
-.project img {
-  width: 100%;
-}
-
-footer.mdl-mini-footer {
-  bottom: 0;
-  padding: 0.5rem;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
-
-footer.mdl-mini-footer > ul {
-  margin: auto;
-  font-size: 2rem;
-}
 
 @media screen and (max-width: 1024px) {
-  header.mdl-layout__header {
-    display: flex;
+
   }
 }
