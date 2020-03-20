@@ -28,14 +28,17 @@ li {
 }
 
 .header {
-  justify-content: center;
+  text-align: center;
+  padding: 48px;
+  border-bottom: 3px solid black;
 }
 
 .geodesign {
-
-}
-
-
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
 
 h1 {
   color: black;
@@ -44,11 +47,51 @@ h1 {
   font-weight: bold;
 }
 
+h2 {
+  font-size: 30px;
+  font-family: Rubik;
+  padding-bottom: 32px;
+}
+
+h3 {
+  font-family: Karla;
+  font-weight: bold;
+}
+
 p {
   font-size: 20px;
   font-family: Karla;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
+section {
+  padding: 48px;
+  text-align:left;
+  border-bottom: 3px solid black;
+  background-color: #E7E7E7
+}
+
+button {
+  background-color: #011149;
+  color: white;
+  text-family: Karla;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.icons {
+  float: right;
+}
+
+footer {
+  padding-top: 48px;
+}
 
 
 
