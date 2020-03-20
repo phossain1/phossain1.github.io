@@ -27,6 +27,19 @@ li {
   font-family: Karla;
 }
 
+a:hover {
+  color: #FB9F99;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:active {
+  color: #FDE54A;
+}
+
 .header {
   text-align: center;
   padding: 48px;
