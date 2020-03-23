@@ -45,7 +45,7 @@ a:active {
 
 header {
   text-align: center;
-  margin: 80px;
+  margin: 48px;
 }
 
 .geodesign {
@@ -70,6 +70,7 @@ h2 {
   font-size: 30px;
   font-family: Poppins;
   color: #373A36;
+  padding-bottom: 32px;
 }
 
 h3 {
@@ -79,20 +80,28 @@ h3 {
 }
 
 p {
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-size: 20px;
   font-family: Karla;
   line-height: 32px;
   color: #373A36
 }
 
-.dashboard {
-  border-radius: 10px;
+.projectphotos img {
+  width: 792px;
+  height: 436px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 10px 10px 5px grey;
+  border-radius: 10px;
 }
 
 section {
-  text-align:left;
+  padding: 48px;
+  margin: auto;
+  text-align: left;
   background-color: #E7E7E7;
+  border-bottom: 80px solid white;
 }
 
 .container {
@@ -102,24 +111,25 @@ section {
 
 button {
   background-color: #011149;
-  text-family: Karla;
   color: white;
   padding: 15px 32px;
   text-align: center;
   display: inline-block;
   font-size: 20px;
+  text-family: Karla;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
 }
 
-.icons {
-  float: right;
+.fa-linkedin {
+  margin: 24px;
 }
 
+
 footer {
-  padding-top: 48px;
+  margin: 48px;
 }
 
 
