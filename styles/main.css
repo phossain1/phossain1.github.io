@@ -89,8 +89,8 @@ p {
 }
 
 .projectphotos img {
-  width: 792px;
-  height: 436px;
+  width: 100%;
+  height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 10px 10px 5px grey;
   border-radius: 10px;
@@ -101,7 +101,8 @@ section {
   margin: auto;
   text-align: left;
   background-color: #E7E7E7;
-  border-bottom: 80px solid white;
+  border-bottom: 48px solid white;
+  display: flex;
 }
 
 .container {
@@ -129,12 +130,15 @@ button {
 
 
 footer {
-  margin: 48px;
 }
 
 
+@media screen and (min-width: 630px) {
+  .projectphotos {
 
-@media screen and (max-width: 1024px) {
+}
 
-  }
+@media screen and (min-width: 1080px) {
+  .projectphotos {
+
 }
