@@ -79,6 +79,15 @@ h3 {
   padding-bottom: 48px;
 }
 
+h6 {
+  text-align: center;
+  font-size: 30px;
+  font-family: Poppins;
+  font-weight: bold;
+  color: #373A36;
+  padding-bottom: 32px;
+}
+
 p {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -122,7 +131,6 @@ section {
 .whitebox {
   padding: 48px;
   margin: auto;
-  text-align: left;
 }
 
 .container {
@@ -147,6 +155,16 @@ ul.problem {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 10px 10px 5px grey;
   border-radius: 10px;
+}
+
+.statistics {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.center {
+  text-align: center;
 }
 
 .comp-analysis img {
