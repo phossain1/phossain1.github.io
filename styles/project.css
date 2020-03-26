@@ -44,7 +44,7 @@ a:active {
 }
 
 header {
-  text-align: center;
+  text-align: left;
   margin: 48px;
   padding: 48px;
 }
@@ -58,7 +58,6 @@ h1 {
   font-family: Poppins;
   font-size: 34px;
   font-weight: bold;
-  text-align: center;
 }
 
 h2 {
@@ -134,10 +133,6 @@ section {
   text-align: left;
 }
 
-.container {
-  margin-left: 232px;
-  margin-right: 232px;
-}
 
 ul.problem {
   list-style-type: disc;
