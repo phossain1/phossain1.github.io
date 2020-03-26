@@ -18,7 +18,7 @@ nav {
   float: left;
 }
 
-.navbuttons {
+.fa-bars {
   float: right;
   padding: auto;
   margin: auto;
@@ -77,6 +77,24 @@ h3 {         /** parts **/
   padding-bottom: 48px;
 }
 
+h4 {   /** typography styling **/
+  text-align: left;
+  font-family: Libre Baskerville;
+  font-weight: normal;
+  font-size: 24px;
+  padding-bottom: 32px;
+  color: white;
+}
+
+h5 {  /** typography styling **/
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 24px;
+  padding-bottom: 32px;
+  color: white;
+}
+
 p {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -123,6 +141,20 @@ section {
   text-align: left;
 }
 
+.typography {
+  background-color: #011149;
+  padding: 48px;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-white-center {
+  color: white;
+  text-align: center;
+}
+
 
 ul.problem {
   list-style-type: disc;
@@ -147,16 +179,7 @@ ul.problem {
   border-radius: 10px;
 }
 
-.homepage-variations img {
-  width: 100%;
-  height: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 10px 10px 5px grey;
-  border-radius: 10px;
-  margin-bottom: 32px;
-}
-
-.wireframe-sketches img, .high-fidelity img, {
+.wireframe-sketches img, .high-fidelity img, .homepage-variations img {
   width: 100%;
   height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
