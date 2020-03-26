@@ -131,6 +131,7 @@ section {
 .whitebox {
   padding: 48px;
   margin: auto;
+  text-align: left;
 }
 
 .container {
