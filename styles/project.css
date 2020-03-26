@@ -53,14 +53,14 @@ header {
   padding-top: 48px;
 }
 
-h1 {
+h1 {          /** "Pinky" **/
   color: #373A36;
   font-family: Poppins;
   font-size: 34px;
   font-weight: bold;
 }
 
-h2 {
+h2 {        /**title headers**/
   text-align: left;
   font-size: 30px;
   font-family: Poppins;
@@ -69,22 +69,13 @@ h2 {
   padding-bottom: 32px;
 }
 
-h3 {
+h3 {         /**subheaders w/in sections**/
   text-align: left;
   font-family: Karla;
   font-weight: normal;
   font-size: 30px;
   color: #373A36;
   padding-bottom: 48px;
-}
-
-h6 {
-  text-align: center;
-  font-size: 30px;
-  font-family: Poppins;
-  font-weight: bold;
-  color: #373A36;
-  padding-bottom: 32px;
 }
 
 p {
@@ -153,12 +144,6 @@ ul.problem {
   border-radius: 10px;
 }
 
-.statistics {
-  display: inline-block;
-  width: 100%;
-  height: auto;
-}
-
 .center {
   text-align: center;
 }
@@ -167,6 +152,23 @@ ul.problem {
   width: 200px;
   height: auto;
 }
+
+.personas img {
+  width: 400px;
+  height: auto;
+  display: block;
+}
+
+.wireframe-sketches img, .scribble img, .user-flows img, .high-fidelity img {
+  width: 400px;
+  height: auto;
+}
+
+.wireframes img {
+  width: 400px;
+  height: auto;
+}
+
 
 .fa-linkedin {
   margin: 24px;
