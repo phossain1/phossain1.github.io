@@ -11,10 +11,17 @@
    <body>
 
      <nav>
-       <div class="logo">
-       <img src="./images/logo.png" alt="logo">
-       </div>
-       <i class="fa fa-bars" style="font-size:48px;"></i>
+       <div class="topnav" id="myTopnav">
+         <div class="logo">
+           <img src="./images/logo.png" alt="logo">
+         </div>
+         <a href="#work" class="active">Work</a>
+         <a href="#about">About</a>
+         <a href="#contact">Contact</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+           <i class="fa fa-bars" style="font-size:48px;"></i>
+         </a>
+      </div>
      </nav>
 
      <header>
@@ -54,5 +61,16 @@
     <i class="fa fa-linkedin" style="font-size:48px;"></i>
     <i class="fa fa-envelope-square" style="font-size:48px;"></i>
    </footer>
+
+   <script>
+   function myFunction() {
+     var x = document.getElementById("myTopnav");
+     if (x.className === "topnav") {
+       x.className += " responsive";
+     } else {
+       x.className = "topnav";
+     }
+   }
+  </script>
  </body>
  </html>
