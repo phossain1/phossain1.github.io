@@ -152,6 +152,17 @@ button {
 
   .topnav.responsive a {
     display: block;
-    text-align: left;
+    text-align: right;
+    width: 100%;
+    background-color: #011149;
+    color: white;
+  }
+
+  .topnav.responsive a:hover {
+    color: #FB9F99;
+  }
+
+  .topnav.responsive a:active {
+    color: #FDE54A;
   }
 }
