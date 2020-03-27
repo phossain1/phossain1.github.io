@@ -132,16 +132,12 @@ button {
 }
 
 
-footer {
-}
-
-
 @media screen and (min-width: 630px) {
-  .projectphotos {
-
+  .flex-container {
+    margin-left: 180px;
+    margin-right: 180px;
 }
 
-@media screen and (min-width: 1080px) {
-  .projectphotos {
-
+@media screen and (max-width: 1080px) {
+  .flex-container {
 }
