@@ -130,7 +130,7 @@ section {
 .button a:link {
   text-decoration: none;
   color: white;
-  text-family: Karla;
+  font-family: Karla;
 }
 
 .button a:visited {
@@ -147,6 +147,14 @@ section {
 
 .fa-linkedin {
   margin: 24px;
+}
+
+.fa-linkedin a:link {
+  color: none;
+}
+
+.fa-envelope-square a:link {
+  color: none;
 }
 
 
