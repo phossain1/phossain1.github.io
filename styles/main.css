@@ -45,7 +45,11 @@ nav {
   display: none;
 }
 
-i.fa {
+.fa-linkedin, .fa-envelope-square {
+  font-size: 48px;
+}
+
+.fa-bars {
   font-size: 24px;
 }
 
@@ -111,18 +115,34 @@ section {
   border-bottom: 48px solid white;
 }
 
-button {
+.button {
   background-color: #011149;
-  color: white;
   padding: 15px 32px;
   text-align: center;
   display: inline-block;
   font-size: 20px;
-  text-family: Karla;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button a:link {
+  text-decoration: none;
+  color: white;
+  text-family: Karla;
+}
+
+.button a:visited {
+  color: white;
+}
+
+.button a:hover {
+  color: #FB9F99;
+}
+
+.button a:active {
+  color: #FDE54A;
 }
 
 .fa-linkedin {
