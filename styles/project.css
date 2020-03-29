@@ -54,7 +54,7 @@ nav {
 }
 
 header {
-  text-align: left;
+  text-align: center;
   margin: 48px;
   padding: 48px;
 }
@@ -155,10 +155,16 @@ section {
   padding: 48px;
   margin: auto;
   text-align: left;
-  background-color: #E7E7E7;
+  background-color: #f4f4f4;
 }
 
 .whitebox {
+  padding: 48px;
+  margin: auto;
+  text-align: left;
+}
+
+.collab-org-access {
   padding: 48px;
   margin: auto;
   text-align: left;
@@ -192,6 +198,10 @@ ul.problem {
 
 .center {
   text-align: center;
+}
+
+.collab-org-access {
+  padding-top: 48px;
 }
 
 .dashboard img  {
@@ -271,10 +281,15 @@ ul.problem {
 }
 
 @media screen and (min-width: 630px) {
-  .container {
-    margin-left: 180px;
-    margin-right: 180px;
+  .container, header {
+    margin-left: 232px;
+    margin-right: 232px;
 }
+
+  .collab-org-access {
+    max-width: 50%;
+    display: inline-block;
+  }
 
 }
 
