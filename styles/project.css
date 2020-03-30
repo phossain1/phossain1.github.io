@@ -165,16 +165,9 @@ section {
   padding-bottom: 48px;
 }
 
-.row-1 {
-  display: flex;
+.container-1 {
+  flex-direction: row;
   flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-.row-2 {
-  display: inline;
-  flex-wrap: wrap;
-  padding: 0 4px;
 }
 
 .typography {
@@ -244,8 +237,9 @@ ul.problem {
 }
 
 .comp-analysis img {
-  width: 100%;
+  width: 200px;
   height: auto;
+  display: inline;
 }
 
 .scribble img {
@@ -311,6 +305,10 @@ ul.problem {
   .flex-container {
     margin-left: 72px;
     margin-right: 72px;
+  }
+
+  .container-1 {
+    display: inline-block;
   }
 
 }
