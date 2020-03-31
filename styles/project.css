@@ -205,10 +205,11 @@ section {
 
 .row-homepage-variations {
   display: flex;
+  flex-flow: row wrap;
 }
 
 .column-homepage-variations {
-  flex: 50%;
+  flex: 40%;
   padding: 5px;
 }
 
