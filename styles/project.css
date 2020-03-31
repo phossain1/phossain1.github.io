@@ -3,6 +3,10 @@ body {
   color: #373A36;
 }
 
+ {
+  box-sizing: border-box;
+}
+
 /** navigation bar **/
 
 nav {
@@ -112,6 +116,10 @@ p {
   color: #373A36
 }
 
+.padding {
+  padding-bottom: 32px;
+}
+
 /** button styling **/
 
 .button {
@@ -165,9 +173,47 @@ section {
   padding-bottom: 48px;
 }
 
-.container-1 {
-  flex-direction: row;
+.container-1 { /** competitive analysis **/
+  clear: both;
+}
+
+.container-1 p { /** competitive analysis**/
+  width: 70%;
+  float: left;
+}
+
+.row-persona { /** personas **/
+  display: flex;
+}
+
+.column-persona { /** personas **/
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.row-wireframes {
+  display: flex;
   flex-wrap: wrap;
+  padding: 0 24px;
+}
+
+.column-wireframes {
+  flex: 40%;
+  max-width: 100%;
+  padding: 0 24px;
+}
+
+.row-homepage-variations {
+  display: flex;
+}
+
+.column-homepage-variations {
+  flex: 50%;
+  padding: 5px;
+}
+
+.clearfix {
+clear: both;
 }
 
 .typography {
@@ -218,7 +264,7 @@ ul.problem {
   border-radius: 10px;
 }
 
-.wireframe-sketches img, .high-fidelity img, .homepage-variations img {
+.wireframe-sketches img, .high-fidelity img, .column-homepage-variations img, .homepage-variations img {
   width: 100%;
   height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -238,8 +284,7 @@ ul.problem {
 
 .comp-analysis img {
   width: 200px;
-  height: auto;
-  display: inline;
+  float: left;
 }
 
 .scribble img {
@@ -247,26 +292,21 @@ ul.problem {
   height: auto;
 }
 
-.personas img {
+.column-persona img {
   width: 100%;
   height: auto;
-  display: block;
-}
-
-.persona2 img {
-  padding-top: 32px;
 }
 
 .lists img, .colors img {
   padding-bottom: 32px;
 }
 
-.wireframes img {
+.column-wireframes img {
   width: 100%;
   height: auto;
   border: 1px solid gray;
   border-radius: 10px;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 .usability-testing img {
@@ -302,16 +342,28 @@ ul.problem {
     margin-right: 232px;
 }
 
+/** user surveys statistics **/
+
   .flex-container {
     margin-left: 72px;
     margin-right: 72px;
   }
 
-  .container-1 {
-    display: inline-block;
+/** competitive analysis **/
+
+  .comp-analysis {
+    padding-top: 32px;
+  }
+
+  .colors {
+    text-align: center;
   }
 
 }
+
+
+
+
 
 /** navigation bar responsiveness **/
 
