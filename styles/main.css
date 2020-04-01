@@ -208,13 +208,18 @@ article {
   padding-bottom: 48px;
 }
 
-.container-1 { /** competitive analysis **/
-  clear: both;
+.row-comp-analysis { /** competitive analysis **/
+  display: flex;
 }
 
-.container-1 p { /** competitive analysis**/
+.row-comp-analysis p { /** competitive analysis**/
   width: 70%;
-  float: left;
+  padding-left: 12px;
+}
+
+.column-comp-analysis {
+  flex: 33.33%;
+  padding: 5px;
 }
 
 .row-persona { /** personas **/
@@ -246,10 +251,6 @@ article {
 .column-homepage-variations {
   flex: 40%;
   padding: 5px;
-}
-
-.clearfix {
-clear: both;
 }
 
 .typography {
@@ -326,9 +327,8 @@ ul.problem {
   margin-bottom: 32px;
 }
 
-.comp-analysis img {
+.column-comp-analysis img {
   width: 200px;
-  float: left;
 }
 
 .scribble img {
