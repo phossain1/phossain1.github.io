@@ -370,8 +370,13 @@ ul.problem {
   font-size: 24px;
 }
 
-.fa-linkedin {
-  margin: 24px;
+.social-link {
+  margin: 16px;
+  display: inline-block;
+}
+
+.social-link a {
+  color: #373A36;
 }
 
 /** query for case study + homepage margins **/
