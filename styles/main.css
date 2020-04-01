@@ -3,6 +3,12 @@ body {
   color: #373A36;
 }
 
+ {
+  box-sizing: border-box;
+}
+
+/** navigation bar **/
+
 nav {
   height: 16px;
   padding-left: 16px;
@@ -53,6 +59,8 @@ nav {
   font-size: 24px;
 }
 
+/** header **/
+
 header {
   text-align: center;
   margin: 48px;
@@ -64,30 +72,60 @@ header {
   width: 50%;
   }
 
-h1 {
+.title {
+  padding-top: 48px;
+}
+
+/** typography **/
+
+h1 {          /** "Pinky" **/
   color: #373A36;
   font-family: Poppins;
   font-size: 34px;
   font-weight: bold;
-  text-align: center;
+}
+
+h2 {        /**title headers**/
+  text-align: left;
+  font-size: 30px;
+  font-family: Poppins;
+  font-weight: bold;
+  color: #373A36;
+}
+
+h3 {         /** parts **/
+  text-align: left;
+  font-family: Karla;
+  font-weight: normal;
+  font-size: 30px;
+  color: #373A36;
+  padding-bottom: 48px;
 }
 
 .subtitle {
-  padding-top: 50px;
-}
-
-h2 {
-  font-size: 30px;
-  font-weight: bold;
-  font-family: Poppins;
-  color: #373A36;
-  padding-bottom: 32px;
-}
-
-h3 {
   font-family: Karla;
-  font-weight: bold;
   color: #373A36;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+}
+
+h4 {   /** scribble typography styling **/
+  text-align: left;
+  font-family: Libre Baskerville;
+  font-weight: normal;
+  font-size: 24px;
+  padding-bottom: 32px;
+  color: white;
+}
+
+h5 {  /** scribble typography styling **/
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 24px;
+  padding-bottom: 32px;
+  color: white;
 }
 
 p {
@@ -99,23 +137,11 @@ p {
   color: #373A36
 }
 
-.projectphotos img {
-  width: 100%;
-  height: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 10px 10px 5px grey;
-  border-radius: 10px;
+.padding {
+  padding-bottom: 32px;
 }
 
-article {
-  padding: 48px;
-  margin: auto;
-  text-align: left;
-  background-color: #f4f4f4;
-  background-image: url("../images/triangles.svg");
-  background-repeat: no-repeat;
-  border-bottom: 48px solid white;
-}
+/** button styling **/
 
 .button {
   background-color: #011149;
@@ -147,28 +173,237 @@ article {
   color: #FDE54A;
 }
 
+/** section styling **/
+
+section {
+  padding: 48px;
+  margin: auto;
+  text-align: left;
+  background-color: #f4f4f4;
+}
+
+article {
+  padding: 48px;
+  margin: auto;
+  text-align: left;
+  background-color: #f4f4f4;
+  background-image: url("../images/triangles.svg");
+  background-repeat: no-repeat;
+  border-bottom: 48px solid white;
+}
+
+.whitebox {
+  padding: 48px;
+  margin: auto;
+  text-align: left;
+}
+
+.flex-container {
+  flex-direction: row;
+  display: inline-block;
+  padding-bottom: 48px;
+}
+
+.container-1 { /** competitive analysis **/
+  clear: both;
+}
+
+.container-1 p { /** competitive analysis**/
+  width: 70%;
+  float: left;
+}
+
+.row-persona { /** personas **/
+  display: flex;
+}
+
+.column-persona { /** personas **/
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.row-wireframes {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 24px;
+}
+
+.column-wireframes {
+  flex: 40%;
+  max-width: 100%;
+  padding-right: 24px;
+}
+
+.row-homepage-variations {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.column-homepage-variations {
+  flex: 40%;
+  padding: 5px;
+}
+
+.clearfix {
+clear: both;
+}
+
+.typography {
+  background-color: #011149;
+  padding: 48px;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-white-center {
+  color: white;
+  text-align: center;
+}
+
+/** alignment styling **/
+
+
+ul.problem {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-bottom: 32px;
+  font-size: 20px;
+  font-family: Karla;
+  line-height: 32px;
+  color: #373A36
+  display: block;
+}
+
+.center {
+  text-align: center;
+}
+
+/** images **/
+
+.projectphotos img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 10px;
+}
+
+.icons img {
+  width: 128px;
+  height: auto;
+  padding-bottom: 32px;
+}
+
+.dashboard img  {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 10px;
+}
+
+.wireframe-sketches img, .high-fidelity img, .column-homepage-variations img, .homepage-variations img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 10px;
+  margin-bottom: 32px;
+}
+
+.user-flows img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 10px;
+  margin-bottom: 32px;
+}
+
+.comp-analysis img {
+  width: 200px;
+  float: left;
+}
+
+.scribble img {
+  width: 100%;
+  height: auto;
+}
+
+.column-persona img {
+  width: 100%;
+  height: auto;
+}
+
+.lists img, .colors img {
+  padding-bottom: 32px;
+}
+
+.column-wireframes img {
+  width: 100%;
+  height: auto;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.usability-testing img {
+  width: 100%;
+  height: auto;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+/** icons **/
+
+.fa-linkedin, .fa-envelope-square {
+  font-size: 48px;
+}
+
+.fa-bars {
+  font-size: 24px;
+}
+
 .fa-linkedin {
   margin: 24px;
 }
 
-.fa-linkedin a:link {
-  color: none;
+/** query for case study + homepage margins **/
+
+@media screen and (min-width: 800px) {
+  .container, header {
+    margin-left: 232px;
+    margin-right: 232px;
+}
+   .flex-container-1 {
+     margin-left: 180px;
+     margin-right: 180px;
 }
 
-.fa-envelope-square a:link {
-  color: none;
-}
+/** user surveys statistics **/
 
-
-@media screen and (min-width: 630px) {
   .flex-container {
-    margin-left: 180px;
-    margin-right: 180px;
-}
+    margin-left: 72px;
+    margin-right: 72px;
+  }
+
+/** competitive analysis **/
+
+  .comp-analysis {
+    padding-top: 32px;
+  }
+
+  .colors {
+    text-align: center;
+  }
 
 }
 
-@media screen and (max-width: 600px) {
+/** navigation bar responsiveness **/
+
+@media screen and (max-width: 800px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -176,7 +411,7 @@ article {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
