@@ -28,6 +28,7 @@ nav {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 20px;
+  box-sizing: border-box;
 }
 
 .topnav a:hover {
@@ -499,7 +500,7 @@ footer {
 @media screen and (max-width: 800px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
-    float: right;
+    float: none;
     display: block;
   }
 }
@@ -507,7 +508,6 @@ footer {
 @media screen and (max-width: 800px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
-    position: absolute;
     right: 0;
     top: 0;
   }
