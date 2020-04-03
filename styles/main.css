@@ -93,8 +93,12 @@ h2 {        /**title headers**/
   color: #373A36;
 }
 
-.padding {
+.padding {       /** spacing in "chapter 2" **/
   padding-bottom: 32px;
+}
+
+.spacing {      /** decreasing paragraph spacing in final thoughts **/
+  padding-bottom: 0px;
 }
 
 h3 {         /** parts **/
@@ -106,7 +110,7 @@ h3 {         /** parts **/
   padding-bottom: 48px;
 }
 
-.subtitle {
+.subtitle {   /** based in dc **/
   font-family: Karla;
   color: #373A36;
   font-size: 18px;
@@ -141,13 +145,9 @@ p {
   color: #373A36
 }
 
-.padding {
-  padding-bottom: 32px;
-}
-
 /** button styling **/
 
-.button {
+.button a {
   background-color: #011149;
   padding: 15px 32px;
   text-align: center;
@@ -175,6 +175,83 @@ p {
 
 .button a:active {
   color: #FDE54A;
+}
+
+/** last button on page (previous) **/
+
+.button-left a {
+  background-color: #011149;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button-left a:link {
+  text-decoration: none;
+  color: white;
+  font-family: Karla;
+}
+
+.button-left a:visited {
+  color: white;
+}
+
+.button-left a:hover {
+  color: #FB9F99;
+}
+
+.button-left a:active {
+  color: #FDE54A;
+}
+
+.button-left {
+}
+
+/** last buttons (next) **/
+
+.button-right a {
+  background-color: #011149;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button-right a:link {
+  text-decoration: none;
+  color: white;
+  font-family: Karla;
+}
+
+.button-right a:visited {
+  color: white;
+}
+
+.button-right a:hover {
+  color: #FB9F99;
+}
+
+.button-right a:active {
+  color: #FDE54A;
+}
+
+.button-right {
+  float: right;
+}
+
+/** clearfix **/
+
+.clearfix {
+  clear: both;
 }
 
 /** section styling **/
@@ -377,6 +454,13 @@ ul.problem {
 
 .social-link a {
   color: #373A36;
+}
+
+/** footer **/
+
+footer {
+  margin-top: 48px;
+  border-top: 2px solid #373A36;
 }
 
 /** query for case study + homepage margins **/
