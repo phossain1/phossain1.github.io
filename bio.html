@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+  </head>
+  <body>
+
+    <nav>
+        <div class="logo">
+          <a href="./index.html">
+          <img src="./images/logo.svg" alt="logo">
+          </a>
+        </div>
+        <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+         <i class="fa fa-bars"></i>
+        <a href="./index.html#work" class="active">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        </a>
+     </div>
+    </nav>
+  <main>
+
+      <div class="header">
+      <div class="clearfix">
+      <h1>Who is Pinky?</h1>
+      </div>
+      <div class="biophoto">
+      <img src="./images/biophoto.jpg" alt="biophoto">
+      </div>
+      </div>
+
+  <div class="flex-container-2">
+    <div class="biography">
+      <h2>The Beginning</h2>
+      <p>They say that avid readers are the most empathetic people. Books and words have always been my passion because I love learning about the many ways that we can relate to each other. Fiction, like UX, is about us.</p>
+      <p>For the last three years, I’ve pursued this interest for language through teaching, an experience like no other, that sharpens the skill of how we relate to each other, of empathy. Teaching lends itself to empathy.</p>
+
+    <h2 class="bio-spacing">Education, Empathy, + Design</h2>
+      <p>As an educator, I had to meet my students where they were. One of my students, Ricky, hated using his agenda. Instead of forcing him to use one, I worked with him to strategize the best way he could remember all of his assignments. I understood that Ricky didn’t use the agenda because it was hard for him to remember to do it under all the stimulus of a classroom, so we looked at alternative ways to make a list of all the tasks he needed to accomplish - methods that worked for him.</p>
+      <div class="pattern">
+      <img src="./images/pattern.svg" alt="pattern">
+      </div>
+      <p>Now, I’m heavily devoted to a different approach to this intuition for human interactions. Educators put their students’ needs first just like UX designers put the needs of the users first. Education is all about problem solving and being able to effectively articulate the solution based on people beyond you. Ricky had a problem, and by talking to him and learning his story, I was able to solve that problem regardless of what I thought he should do.</p>
+      <p>In the same way, UX puts the user’s desires before the designer’s decisions. I create for the user like I teach for the student. I love creating personas to try to understand who our user is. A product isn’t just a product. A product is a person’s motivations, goals, profession, thoughts, and feelings. A product is the story of a character and that makes empathy a UX designer’s greatest asset.</p>
+
+    <h2 class="bio-spacing">Jumping Into UX</h2>
+      <p>While I loved working in education, after a while I felt it wasn’t quite right for me. It had its perks, but I’ve always felt that I had this store of creative energy that had nowhere to go while I was teaching. Planning lessons, of course, requires a fair bit of creativity, but I wanted more. I wanted to create more than lesson plans. I wanted color, movement, and stories.</p>
+      <p>Thus, I began my journey into UX, a dynamic field that merged the imaginative side of me with the empathetic side of me.</p>
+    </div>
+  </div>
+
+    <div class="bio-background">
+      <p>The digital space is one that needs empathy, not only to create better websites, but to remind ourselves that tech is about people. My favorite thing about UX is that it’s all about the person at the opposite end of the screen, someone you can’t even see. Who are they? What are their problems and what can I do to solve them? Empathy is my greatest strength.</p>
+    </div>
+
+  <div class="flex-container-2">
+    <div class="biography">
+      <p>Contact me if you’d like to talk about design or what you’re reading right now.</p>
+    </div>
+  </div>
+  
+</main>
+ <footer id="contact">
+  <h1 class="footer">Get in touch</h1>
+  <p class="footer-1">Let's talk design, or tell me what your favorite book is.</p>
+  <div class="social-link">
+  <a href="https://www.linkedin.com/in/monika-hossain/">
+    <i class="fa fa-linkedin"></i>
+  </a>
+  </div>
+  <div class="social-link">
+  <a href="mailto:monika.hossain27@gmail.com">
+    <i class="fa fa-envelope-square"></i>
+  </a>
+  </div>
+ </footer>
+
+ <script>
+
+  /** scroll animation **/
+
+   ScrollReveal().reveal('.flex-container-1');
+   ScrollReveal().reveal('.topnav');
+   ScrollReveal().reveal('.logo');
+
+  /** click hamburger icon **/
+
+   function myFunction() {
+     var x = document.getElementById("myTopnav");
+     if (x.className === "topnav") {
+       x.className += " responsive";
+     } else {
+       x.className = "topnav";
+     }
+   }
+</script>
+
+
+</body>
+</html>
