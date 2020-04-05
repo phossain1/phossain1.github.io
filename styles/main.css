@@ -96,13 +96,19 @@ h2 {        /**title headers**/
   color: #373A36;
 }
 
-.padding {       /** spacing in "chapter 2" **/
+.padding  {       /** spacing in "chapter 2" **/
   padding-bottom: 32px;
 }
 
-.spacing {      /** decreasing paragraph spacing in final thoughts **/
+.spacing, .biography p {      /** decreasing paragraph spacing in final thoughts **/
   padding-bottom: 0px;
 }
+
+.bio-spacing {
+  padding-top: 48px;
+  padding-bottom: 16px;
+}
+
 
 h3 {         /** parts **/
   text-align: left;
@@ -121,7 +127,7 @@ h3 {         /** parts **/
   text-align: center;
 }
 
-h4 {   /** scribble typography styling **/
+h4  {   /** scribble typography styling **/
   text-align: left;
   font-family: Libre Baskerville;
   font-weight: normal;
@@ -139,7 +145,7 @@ h5 {  /** scribble typography styling **/
   color: white;
 }
 
-p {
+p, .toc li {
   padding-top: 32px;
   padding-bottom: 32px;
   font-size: 20px;
@@ -148,7 +154,23 @@ p {
   color: #373A36
 }
 
-/** button styling **/
+.toc-header {
+  text-align: center;
+  border-top: 1px solid #373A36;
+  padding-top: 32px;
+  padding-bottom: 0;
+}
+
+.footer {
+  padding-top: 32px;
+}
+
+.footer-1 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/** button + link styling **/
 
 .button a {
   background-color: #011149;
@@ -215,6 +237,20 @@ p {
 .button-left {
 }
 
+.toc li a:hover {
+  color: #FB9F99;
+}
+
+.toc li a:link {
+  color: #373A36;
+  text-decoration: underline;
+}
+
+.toc li a:active {
+  color: #FDE54A;
+}
+
+
 /** last buttons (next) **/
 
 .button-right a {
@@ -251,6 +287,30 @@ p {
   float: right;
 }
 
+/** go to top button **/
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #011149;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-family: Karla;
+  font-weight: bold;
+}
+
+#myBtn:hover {
+  background-color: #FB9F99;
+}
+
 /** clearfix **/
 
 .clearfix {
@@ -259,14 +319,14 @@ p {
 
 /** section styling **/
 
-section {
+section {                       /** for case study **/
   padding: 48px;
   margin: auto;
   text-align: left;
   background-color: #f4f4f4;
 }
 
-article {
+article {                         /** for homepage **/
   padding: 48px;
   margin: auto;
   text-align: left;
@@ -280,6 +340,15 @@ article {
   padding: 48px;
   margin: auto;
   text-align: left;
+}
+
+.toc {
+  padding-top: 16px;
+}
+
+.toc li {
+  padding: 12px;
+  text-align: center;
 }
 
 .flex-container {
@@ -338,7 +407,7 @@ article {
   padding: 48px;
 }
 
-.color-white {
+.color-white, .bio-background p {
   color: white;
 }
 
@@ -346,6 +415,30 @@ article {
   color: white;
   text-align: center;
 }
+
+/** bio section styling **/
+
+.header {
+  margin-top: 100px;
+}
+
+.flex-container-2 {               /**margins for about **/
+  margin: auto;
+  text-align: left;
+  padding: 48px;
+}
+
+.bio-background {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-top: 32px;
+  background-color: #011149;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: left;
+  padding: 32px;
+}
+
 
 /** alignment styling **/
 
@@ -371,7 +464,6 @@ ul.problem {
   width: 100%;
   height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 10px 10px 5px grey;
   border-radius: 10px;
 }
 
@@ -385,7 +477,6 @@ ul.problem {
   width: 100%;
   height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 10px 10px 5px grey;
   border-radius: 10px;
 }
 
@@ -393,7 +484,6 @@ ul.problem {
   width: 100%;
   height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 10px 10px 5px grey;
   border-radius: 10px;
   margin-bottom: 32px;
 }
@@ -402,7 +492,6 @@ ul.problem {
   width: 100%;
   height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 10px 10px 5px grey;
   border-radius: 10px;
   margin-bottom: 32px;
 }
@@ -440,6 +529,24 @@ ul.problem {
   border-radius: 10px;
 }
 
+/** bio images **/
+
+.biophoto img {
+  width: 100%;
+  max-height: 350px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.pattern img {
+  padding-top: 32px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
 /** icons **/
 
 .fa-linkedin, .fa-envelope-square {
@@ -473,7 +580,7 @@ footer {
     margin-left: 232px;
     margin-right: 232px;
 }
-   .flex-container-1 {
+   .flex-container-1, .biography, .bio-background p {
      margin-left: 180px;
      margin-right: 180px;
 }
@@ -483,6 +590,14 @@ footer {
   .flex-container {
     margin-left: 72px;
     margin-right: 72px;
+  }
+
+  .flex-container-2 {
+    padding: 0px;
+  }
+
+  .bio-background {
+    padding: 0px;
   }
 
 /** competitive analysis **/
@@ -508,7 +623,11 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: absolute;
+    right: 0;
+  }
+
   .topnav.responsive .icon {
     right: 0;
     top: 0;
