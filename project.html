@@ -18,8 +18,8 @@
          <div class="topnav" id="myTopnav">
          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
          <i class="fa fa-bars"></i>
-         <a href="#work" class="active">Work</a>
-         <a href="#about">About</a>
+         <a href="./index.html#work" class="active">Work</a>
+         <a href="./bio.html">About</a>
          <a href="#contact">Contact</a>
          </a>
         </div>
@@ -39,11 +39,28 @@
       </div>
      </header>
 
-      <section>   <!--Roles + Deliverables start gray-->
+     <div class="whitebox">
+       <div class="container">
+       <h3 class="toc-header">Table of Contents</h3>
+       <ul class="toc">
+         <li><a href="#overview">Prologue: Overview</a>
+         <li><a href="#part-1">Part 1: Discovery + Resesearch</a>
+         <li><a href="#part-2">Part 2: Information Architecture</a>
+         <li><a href="#part-3">Part 3: Branding</a>
+         <li><a href="#part-4">Part 4: Visual Design + Prototype/Testing</a>
+         <li><a href="#part-5">Part 5: Final Thoughts</a>
+       </ul>
+       </div>
+     </div>
+
+     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+      <section id="overview">   <!--Roles + Deliverables start gray-->
         <div class="container">
         <div class="icons">  <!--pencil image-->
         <img src="./images/tools-and-utensils.png" alt="tools-and-utensils">
         </div>
+        <h3>PROLOGUE: OVERVIEW</h3>
         <h2>Roles + Deliverables + Tools</h2>
         <p>I led the design of Scribble’s platform on desktop applications, including efforts to improve the platform through user research, prototype mockups with Figma and Invision, and usability tests. Deliverables included images, icons, prototype mockups of the app, logos, and a style guide.</p>
         </div>
@@ -79,7 +96,7 @@
         </div>
       </section>
 
-      <div class="whitebox"> <!--discovery + research-->
+      <div class="whitebox" id="part-1"> <!--discovery + research-->
         <div class="container">
         <h3>PART 1: DISCOVERY + RESEARCH</h3>
         <h2>CHAPTER 1: The Survey</h2>
@@ -109,7 +126,7 @@
 
       <section>
       <div class="container">
-        <h2 class="padding">CHAPTER 2: The competitive analysis</h2>
+        <h2 class="padding">CHAPTER 2: The Competitive Analysis</h2>
 
         <div class="row-comp-analysis">
         <div class="column-comp-analysis"><img src="./images/google-drive.png" alt="googledrive"></div>
@@ -150,7 +167,7 @@
       </div>
      </div>
 
-     <section>   <!--information architecture-->
+     <section id="part-2">   <!--information architecture-->
        <div class="container">
        <h3>PART 2: INFORMATION ARCHITECTURE</h3>
        <h2>CHAPTER 4: The User Stories</h2>
@@ -253,7 +270,7 @@
       </div>
      </section>
 
-      <div class="whitebox">  <!--branding-->
+      <div class="whitebox" id="part-3">  <!--branding-->
         <div class="container">
         <h3>PART 3: BRANDING</h3>
         <h2>CHAPTER 8: The Logo + Colors + Typography</h2>
@@ -289,7 +306,7 @@
 
 
       <section>  <!--visual design + prototyping-->
-        <div class="container">
+        <div class="container" id="part-4">
         <h3>PART 4: VISUAL DESIGN + PROTOTYPE/TESTING</h3>
         <h2>CHAPTER 10: The High-Fidelity Mockups</h2>
         <p>High fidelity mockups brought Scribble’s branding to the wireframes. Many aspects were adjusted in the high fidelity mockups after user testing such as: </p>
@@ -339,7 +356,7 @@
         </div>
       </section>
 
-      <div class="whitebox">  <!--conclusion-->
+      <div class="whitebox" id="part-5">  <!--conclusion-->
         <div class="container">
         <div class="icons">
         <img src="./images/light-bulb.png" alt="light-bulb">
@@ -363,6 +380,8 @@
     </main>
     <div class="clearfix">
     <footer id="contact">
+     <h1 class="footer">Get in touch</h1>
+     <p class="footer-1">Let's talk design, or tell me what your favorite book is.</p>
      <div class="social-link">
      <a href="https://www.linkedin.com/in/monika-hossain/">
        <i class="fa fa-linkedin"></i>
@@ -377,14 +396,36 @@
     </div>
 
    <script>
-   function myFunction() {
-     var x = document.getElementById("myTopnav");
-     if (x.className === "topnav") {
-       x.className += " responsive";
-     } else {
-       x.className = "topnav";
+
+    //go to top button
+
+    var mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+}
+
+     /** click hamburger icon **/
+
+     function myFunction() {
+       var x = document.getElementById("myTopnav");
+       if (x.className === "topnav") {
+         x.className += " responsive";
+       } else {
+         x.className = "topnav";
+       }
      }
-   }
   </script>
 
  </body>
