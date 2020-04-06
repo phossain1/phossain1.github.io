@@ -332,13 +332,19 @@ section {                       /** for case study **/
 }
 
 article {                         /** for homepage **/
-  padding: 48px;
-  margin: auto;
-  text-align: left;
-  background-color: #f4f4f4;
   background-image: url("../images/triangles.svg");
   background-repeat: no-repeat;
-  border-bottom: 48px solid white;
+  text-align: left;
+  background-color: #f4f4f4;
+  padding-right: 48px;
+  padding-left: 48px;
+}
+
+.flex-container-1 {
+  margin-top: 48px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+
 }
 
 .whitebox {
@@ -367,13 +373,12 @@ article {                         /** for homepage **/
 }
 
 .row-comp-analysis p { /** competitive analysis**/
-  width: 70%;
-  padding-left: 12px;
+  width: 100%;
+  padding-left: 5px;
 }
 
 .column-comp-analysis {
   flex: 33.33%;
-  padding: 5px;
 }
 
 .row-persona { /** personas **/
@@ -502,7 +507,9 @@ ul.problem {
 }
 
 .column-comp-analysis img {
-  width: 200px;
+  width: 70%;
+  margin-top: 32px;
+  margin-bottom: auto;
 }
 
 .scribble img {
@@ -555,7 +562,7 @@ ul.problem {
 /** icons **/
 
 .fa-linkedin, .fa-envelope-square {
-  font-size: 48px;
+  font-size: 2em;
 }
 
 .fa-bars {
@@ -563,7 +570,7 @@ ul.problem {
 }
 
 .social-link {
-  margin: 16px;
+  margin: 8px;
   display: inline-block;
 }
 
@@ -574,9 +581,19 @@ ul.problem {
 /** footer **/
 
 footer {
-  margin-top: 48px;
   border-top: 2px solid #373A36;
 }
+
+/** query for ultrawide monitors**/
+
+@media screen and (max-width: 1920px) {
+  .user-stats {
+    margin-left: 232px;
+    margin-right: 232px;
+  }
+
+}
+
 
 /** query for case study + homepage margins **/
 
@@ -597,6 +614,8 @@ footer {
     margin-right: 72px;
   }
 
+  /** gets rid of extra padding **/
+
   .flex-container-2 {
     padding: 0px;
   }
@@ -610,6 +629,8 @@ footer {
   .comp-analysis {
     padding-top: 32px;
   }
+
+/** for colors in typogrpahy and branding **/
 
   .colors {
     text-align: center;
