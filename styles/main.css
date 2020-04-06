@@ -344,7 +344,6 @@ article {                         /** for homepage **/
   margin-top: 48px;
   padding-top: 48px;
   padding-bottom: 48px;
-
 }
 
 .whitebox {
@@ -586,10 +585,21 @@ footer {
 
 /** query for ultrawide monitors**/
 
-@media screen and (max-width: 1920px) {
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
   .user-stats {
     margin-left: 232px;
     margin-right: 232px;
+  }
+
+          /**homepage + bio**/
+
+  .projectphotos {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .flex-container-1 {
+    margin: 0 auto;
   }
 
 }
