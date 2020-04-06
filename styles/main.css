@@ -367,6 +367,15 @@ article {                         /** for homepage **/
   padding-bottom: 48px;
 }
 
+.row-persona { /** personas **/
+  display: flex;
+}
+
+.column-persona { /** personas **/
+  flex: 33.33%;
+  padding: 5px;
+}
+
 .row-comp-analysis { /** competitive analysis **/
   display: flex;
 }
@@ -380,14 +389,7 @@ article {                         /** for homepage **/
   flex: 33.33%;
 }
 
-.row-persona { /** personas **/
-  display: flex;
-}
 
-.column-persona { /** personas **/
-  flex: 33.33%;
-  padding: 5px;
-}
 
 .row-wireframes {
   display: flex;
@@ -583,34 +585,12 @@ footer {
   border-top: 2px solid #373A36;
 }
 
-/** query for ultrawide monitors**/
-
-@media screen and (min-width: 1200px) and (max-width: 1920px) {
-  .user-stats {
-    margin-left: 232px;
-    margin-right: 232px;
-  }
-
-          /**homepage + bio**/
-
-  .projectphotos {
-    width: 70%;
-    margin: 0 auto;
-  }
-
-  .flex-container-1 {
-    margin: 0 auto;
-  }
-
-}
-
-
 /** query for case study + homepage margins **/
 
 @media screen and (min-width: 800px) {
   .container, header {
-    margin-left: 232px;
-    margin-right: 232px;
+    margin-left: 180px;
+    margin-right: 180px;
 }
    .flex-container-1, .biography, .bio-background p {
      margin-left: 180px;
@@ -648,6 +628,7 @@ footer {
 
 }
 
+
 /** navigation bar responsiveness **/
 
 @media screen and (max-width: 800px) {
@@ -684,4 +665,63 @@ footer {
   .topnav.responsive a:active {
     color: #FDE54A;
   }
+}
+
+/** query for iPad landscape**/
+
+@media screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
+
+.container {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+
+}
+
+
+/** query for ultrawide monitors**/
+
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+  .user-stats {
+    margin-left: 232px;
+    margin-right: 232px;
+  }
+
+          /**homepage + bio**/
+
+  .projectphotos {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .biography, .bio-background p {
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+
+  .flex-container-1 {
+    margin: auto;
+    margin-top: 48px;
+    width: 50%;
+  }
+
+        /**case study**/
+
+  .container {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .row-persona { /** personas **/
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .column-persona { /** personas **/
+    flex: 33.33%;
+    padding: 5px;
+  }
+
 }
