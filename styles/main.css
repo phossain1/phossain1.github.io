@@ -83,15 +83,19 @@ header {
 
 h1 {          /** "Pinky" **/
   color: #373A36;
-  font-family: "Poppins";
+  font-family: 'Poppins', sans-serif;
   font-size: 34px;
-  font-weight: bold;
+  font-weight: 800;
+}
+
+.letter-spacing {         /**letter spacing for "do your best work"**/
+  letter-spacing: 1px;
 }
 
 h2 {        /**title headers**/
   text-align: left;
   font-size: 30px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   color: #373A36;
 }
@@ -129,7 +133,7 @@ h3 {         /** parts **/
 
 h4  {   /** scribble typography styling **/
   text-align: left;
-  font-family: "Libre Baskerville";
+  font-family: "Libre Baskerville", serif;
   font-weight: normal;
   font-size: 24px;
   padding-bottom: 32px;
@@ -138,7 +142,7 @@ h4  {   /** scribble typography styling **/
 
 h5 {  /** scribble typography styling **/
   text-align: left;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   font-size: 24px;
   padding-bottom: 32px;
@@ -163,6 +167,7 @@ p, .toc li {
 
 .footer {
   padding-top: 32px;
+  letter-spacing: 2px;
 }
 
 .footer-1 {
