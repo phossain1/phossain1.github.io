@@ -24,7 +24,7 @@ nav {
 .topnav a {
   float: left;
   display: block;
-  font-family: Karla;
+  font-family: "Karla";
   color: #373A36;
   padding: 14px 16px;
   text-decoration: none;
@@ -83,7 +83,7 @@ header {
 
 h1 {          /** "Pinky" **/
   color: #373A36;
-  font-family: Poppins;
+  font-family: "Poppins";
   font-size: 34px;
   font-weight: bold;
 }
@@ -91,7 +91,7 @@ h1 {          /** "Pinky" **/
 h2 {        /**title headers**/
   text-align: left;
   font-size: 30px;
-  font-family: Poppins;
+  font-family: "Poppins";
   font-weight: bold;
   color: #373A36;
 }
@@ -112,7 +112,7 @@ h2 {        /**title headers**/
 
 h3 {         /** parts **/
   text-align: left;
-  font-family: Karla;
+  font-family: "Karla";
   font-weight: normal;
   font-size: 30px;
   color: #373A36;
@@ -120,7 +120,7 @@ h3 {         /** parts **/
 }
 
 .subtitle {   /** based in dc **/
-  font-family: Karla;
+  font-family: "Karla";
   color: #373A36;
   font-size: 18px;
   font-weight: normal;
@@ -129,7 +129,7 @@ h3 {         /** parts **/
 
 h4  {   /** scribble typography styling **/
   text-align: left;
-  font-family: Libre Baskerville;
+  font-family: "Libre Baskerville";
   font-weight: normal;
   font-size: 24px;
   padding-bottom: 32px;
@@ -138,7 +138,7 @@ h4  {   /** scribble typography styling **/
 
 h5 {  /** scribble typography styling **/
   text-align: left;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-weight: normal;
   font-size: 24px;
   padding-bottom: 32px;
@@ -149,7 +149,7 @@ p, .toc li {
   padding-top: 32px;
   padding-bottom: 32px;
   font-size: 20px;
-  font-family: Karla;
+  font-family: "Karla";
   line-height: 32px;
   color: #373A36
 }
@@ -187,7 +187,7 @@ p, .toc li {
 .button a:link {
   text-decoration: none;
   color: white;
-  font-family: Karla;
+  font-family: "Karla";
 }
 
 .button a:visited {
@@ -219,7 +219,7 @@ p, .toc li {
 .button-left a:link {
   text-decoration: none;
   color: white;
-  font-family: Karla;
+  font-family: "Karla";
 }
 
 .button-left a:visited {
@@ -268,7 +268,7 @@ p, .toc li {
 .button-right a:link {
   text-decoration: none;
   color: white;
-  font-family: Karla;
+  font-family: "Karla";
 }
 
 .button-right a:visited {
@@ -303,7 +303,7 @@ p, .toc li {
   cursor: pointer;
   padding: 15px;
   border-radius: 10px;
-  font-family: Karla;
+  font-family: "Karla";
   font-weight: bold;
 }
 
@@ -448,7 +448,7 @@ ul.problem {
   list-style-position: inside;
   padding-bottom: 32px;
   font-size: 20px;
-  font-family: Karla;
+  font-family: "Karla";
   line-height: 32px;
   color: #373A36
   display: block;
