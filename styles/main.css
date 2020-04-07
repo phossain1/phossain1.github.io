@@ -9,18 +9,20 @@ body {
 
 /** navigation bar **/
 
-nav {
+#nav {
   height: 16px;
-  padding: 16px 16px 48px 16px;
-}
-
-#navbar {
+  padding: 16px;
   overflow: hidden;
 }
 
 .sticky {
   position: fixed;
+  top: 0;
   width: 100%;
+}
+
+.sticky + header {
+  padding-top: 60px;
 }
 
 .topnav {
