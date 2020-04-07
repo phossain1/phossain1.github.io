@@ -9,9 +9,9 @@ body {
 
 /** navigation bar **/
 
-#nav {
+#navbar {
   height: 16px;
-  padding: 16px;
+  padding: 16px 16px 48px 16px;
   overflow: hidden;
 }
 
@@ -19,6 +19,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  padding: 32px;
 }
 
 .sticky + header {
