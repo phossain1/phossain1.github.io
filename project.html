@@ -16,6 +16,7 @@
    </head>
    <body>
      <nav>
+       <div class="navbar">
          <div class="logo">
            <a href="./index.html">
            <img src="./images/logo.svg" alt="logo">
@@ -29,8 +30,8 @@
          <a href="#contact">Contact</a>
          </a>
         </div>
+      </div>
     </nav>
-     <main>
 
       <header>
       <div class="clearfix">
@@ -43,7 +44,12 @@
        <a href="https://monika969142.invisionapp.com/overview/Scribble-Prototype-High-Fidelity-ck5bmcxz110je01c5gu5nc7q5/screens?v=hX23HM2YchnDbZZy3hEbsA%3D%3D&linkshare=urlcopied">View InVision Prototype</a>
        </div>
       </div>
+      <div class="arrow bounce">
+      <a class="fa fa-angle-down fa-4x" href="#overview"></a>
+      </div>
      </header>
+
+    <main>
 
      <div class="whitebox">
        <div class="container">
@@ -162,15 +168,26 @@
 
         <div class="row-persona">
         <div class="column-persona">
-          <div class="saeeda">
-          <img src="./images/persona1.png" alt="persona1">
+
+        <div class="saeeda">
+        <img src="./images/persona1.png" onclick="onClick(this)" id="persona" alt="persona1">
+        </div>
+
+          <div id="myModal" class="modal" onclick="this.style.display='none'">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
           </div>
+
         </div>
 
         <div class="column-persona">
-          <img src="./images/persona2.png" alt="persona2">
+          <img src="./images/persona2.png" onclick="onClick(this)" id="persona" alt="persona2">
+          <div id="myModal" class="modal" onclick="this.style.display='none'">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          </div>
         </div>
-        </div>
+      </div>
 
       </div>
      </div>
@@ -404,6 +421,22 @@
     </div>
 
    <script>
+
+   /** click on persona 1 **/
+
+    function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("myModal").style.display = "block";
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+     modal.style.display = "none";
+    }
+
 
     //go to top button
 
