@@ -92,9 +92,18 @@ a { color: #373A36; text-decoration: none; }
   }
 }
 
+/** screen fits all header div**/
+
+html, body {
+  height: 100%;
+}
+
 .full-height {
     height: 100vh;
 }
+
+/**header image**/
+
 
 .geodesign {
   margin-left: auto;
