@@ -4,6 +4,10 @@
      <title>Case Study</title>
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
+     <script src="https://unpkg.com/scrollreveal@4"></script>
+     <script>
+      ScrollReveal({ reset: true })
+     </script>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet"
      href="https://fonts.googleapis.com/css?family=Poppins">
@@ -25,9 +29,9 @@
          <div class="topnav" id="myTopnav">
          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
          <i class="fa fa-bars"></i>
-         <a href="./index.html#work" class="active">Work</a>
-         <a href="./bio.html">About</a>
-         <a href="#contact">Contact</a>
+         <a href="./index.html#work" class="nav-list">Work</a>
+         <a href="./bio.html" class="nav-list">About</a>
+         <a href="#contact" class="nav-list">Contact</a>
          </a>
         </div>
       </div>
@@ -45,7 +49,7 @@
        </div>
       </div>
       <div class="arrow bounce">
-      <a class="fa fa-angle-down fa-4x" href="#overview"></a>
+      <a class="fa fa-chevron-down fa-3x" href="#overview"></a>
       </div>
      </header>
 
@@ -197,9 +201,19 @@
        <h3>PART 2: INFORMATION ARCHITECTURE</h3>
        <h2>CHAPTER 4: The User Stories</h2>
        <p>User stories are based on most frequent tasks as well as what users wanted most out of a cloud storage system. We identified these key processes to focus on for Scribble’s prototype:</p>
-       <div class="lists">
-       <img src="./images/bulletedlist1.svg" alt="bulletedlist1">
-       </div>
+       <ul class="fa-ul">
+         <li><span class="fa-li"><i class="fa fa-check-square"></i></span>creating an account,</li>
+         <li><span class="fa-li"><i class="fa fa-check-square"></i></span>syncing to Google Drive,</li>
+         <li><span class="fa-li"><i class="fa fa-check-square"></i></span>creating a document,</li>
+         <li><span class="fa-li"><i class="fa fa-check-square"></i></span>creating a new folder and adding content to an existing folder,</li>
+         <li><span class="fa-li"><i class="fa fa-check-square"></i></span>editing documents,</li>
+         <li><span class="fa-li"><i class="fa fa-check-square"></i></span>accessing frequently opened documents,</li>
+         <li><span class="fa-li"><i class="fa fa-check-square"></i></span>autosaving content,</li>
+         <li><span class="fa-li"><i class="fa fa-check-square"></i></span>sharing content,</li>
+         <li><span class="fa-li"><i class="fa fa-check-square"></i></span>suggesting comments,</li>
+         <li><span class="fa-li"><i class="fa fa-check-square"></i></span>and allocating tasks</li>
+       </ul>
+       <div class="padding-top">
        <div class="button">
        <a href="https://docs.google.com/spreadsheets/d/1Z0TWbJlD0pPc7pQKcFASfZovkvX0ek8ckiVrT0SdfW4/edit#gid=0">View All Stories</a>
        </div>
@@ -335,7 +349,11 @@
         <h3>PART 4: VISUAL DESIGN + PROTOTYPE/TESTING</h3>
         <h2>CHAPTER 10: The High-Fidelity Mockups</h2>
         <p>High fidelity mockups brought Scribble’s branding to the wireframes. Many aspects were adjusted in the high fidelity mockups after user testing such as: </p>
-        <img src="./images/bulletlist2.svg" alt="list">
+          <ul class="fa-ul">
+            <li><span class="fa-li"><i class="fa fa-check-square"></i></span>a cleaner dashboard,</li>
+            <li><span class="fa-li"><i class="fa fa-check-square"></i></span>a cleaner homepage,</li>
+            <li><span class="fa-li"><i class="fa fa-check-square"></i></span>and using better folder icons</li>
+          </ul>
         <p>We  incorporated a Google button to standardize the Google sign-in process. In addition, we changed the sign up button for better contrast.</p>
         <div class="high-fidelity">
         <img src="./images/signup2.png" alt="signup2">
@@ -391,13 +409,8 @@
         <p class="spacing">Users seemed satisfied with the general feel of the platform. Although we had initial doubts about the branding not being assertive enough, it worked in favor of the target audience who were receptive to it. The allocating task feature was also a popular one for the platform.</p>
         <p class="spacing">Even though we worked and reworked the dashboard, if given more time, we would have spent more energy researching and testing for this screen. We went through the most iterations with the look and feel of the dashboard, but if given more time, we might play with anchoring the sidebar with a different color or texture.</p>
         <p>More consistent icons and CTAs would also increase Scribble’s usability. For future projects, the dashboard will be tested and retested to ensure optimal usability of a product. </p>
-        <div class="last-buttons">
-        <div class="button-left">
-          <a href="./index.html">View Previous Case Study</a>
-        </div>
         <div class="button-right">
           <a href="./index.html">View Next Case Study</a>
-        </div>
         </div>
         </div>
       </div>
@@ -422,6 +435,14 @@
 
    <script>
 
+   /**scroll reveal**/
+
+   ScrollReveal().reveal('.logo', { duration: 2000 });
+   ScrollReveal().reveal('.nav-list', { interval: 200 });
+   ScrollReveal().reveal('header', { duration: 1000 });
+   ScrollReveal().reveal('footer', { duration: 1000 });
+
+
    /** click on persona 1 **/
 
     function onClick(element) {
@@ -429,16 +450,14 @@
     document.getElementById("myModal").style.display = "block";
     }
 
-    // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
      modal.style.display = "none";
     }
 
 
-    //go to top button
+    /**go to top button**/
 
     var mybutton = document.getElementById("myBtn");
 
