@@ -75,9 +75,9 @@ a { color: #373A36; text-decoration: none; }
   margin: 8% 0;
 }
 .bounce {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
 }
 
 @keyframes bounce {
@@ -90,16 +90,6 @@ a { color: #373A36; text-decoration: none; }
   60% {
     transform: translateY(-15px);
   }
-}
-
-/** screen fits all header div**/
-
-html, body {
-  height: 100%;
-}
-
-.full-height {
-    height: 100vh;
 }
 
 /**header image**/
@@ -201,6 +191,27 @@ p, .toc li {
   padding-bottom: 0;
 }
 
+/** list styling in user stories and high fid mockups **/
+
+.fa-ul {
+  font-family: "Karla", sans-serif;
+  font-size: 20px;
+}
+
+.fa-ul li {
+  padding-bottom: 12px;
+}
+
+.fa-check-square {
+  color: #fb9f99;
+}
+
+.padding-top {
+  padding-top: 32px;
+}
+
+/**footer styling**/
+
 .footer {
   padding-top: 32px;
   letter-spacing: 2px;
@@ -209,6 +220,21 @@ p, .toc li {
 .footer-1 {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+/**table of contents**/
+
+.toc li a:hover {
+  color: #FB9F99;
+}
+
+.toc li a:link {
+  color: #373A36;
+  text-decoration: underline;
+}
+
+.toc li a:active {
+  color: #FDE54A;
 }
 
 /** button + link styling **/
@@ -243,56 +269,12 @@ p, .toc li {
   color: #FDE54A;
 }
 
-/** last button on page (previous) **/
-
-.button-left a {
-  background-color: #011149;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 20px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.button-left a:link {
-  text-decoration: none;
-  color: white;
-  font-family: "Karla";
-}
-
-.button-left a:visited {
-  color: white;
-}
-
-.button-left a:hover {
-  color: #FB9F99;
-}
-
-.button-left a:active {
-  color: #FDE54A;
-}
-
-.button-left {
-}
-
-.toc li a:hover {
-  color: #FB9F99;
-}
-
-.toc li a:link {
-  color: #373A36;
-  text-decoration: underline;
-}
-
-.toc li a:active {
-  color: #FDE54A;
-}
-
 
 /** last buttons (next) **/
+
+.button-right {
+  text-align: right;
+}
 
 .button-right a {
   background-color: #011149;
@@ -322,10 +304,6 @@ p, .toc li {
 
 .button-right a:active {
   color: #FDE54A;
-}
-
-.button-right {
-  float: right;
 }
 
 /** go to top button **/
@@ -604,11 +582,6 @@ ul.problem {
   cursor: pointer;
 }
 
-
-.lists img, .colors img {
-  padding-bottom: 32px;
-}
-
 .column-wireframes img {
   width: 100%;
   height: auto;
@@ -631,6 +604,7 @@ ul.problem {
   max-height: 350px;
   padding-top: 48px;
   padding-bottom: 48px;
+  object-fit: cover;
 }
 
 .pattern img {
