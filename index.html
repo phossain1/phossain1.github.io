@@ -5,6 +5,9 @@
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <script src="https://unpkg.com/scrollreveal@4"></script>
+     <script>
+		   ScrollReveal({ reset: true })
+	   </script>
      <link rel="stylesheet"
      href="https://fonts.googleapis.com/css?family=Poppins">
      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet">
@@ -17,6 +20,7 @@
    <body>
 
      <nav>
+       <div class="navbar">
          <div class="logo">
            <a href="./index.html">
            <img src="./images/logo.svg" alt="logo">
@@ -25,15 +29,15 @@
          <div class="topnav" id="myTopnav">
          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
-         <a href="#work" class="active">Work</a>
-         <a href="./bio.html">About</a>
-         <a href="#contact">Contact</a>
+         <a href="#work" class="nav-list">Work</a>
+         <a href="./bio.html" class="nav-list">About</a>
+         <a href="#contact" class="nav-list">Contact</a>
          </a>
+       </div>
        </div>
      </nav>
 
      <header>
-       <div class="full-height">
        <div class="clearfix">
        <h1>Pinky</h1>
        </div>
@@ -41,9 +45,8 @@
        <p>I’m a UX Designer, <br>and I’d love to help you tell your story.<br></p>
        <h3 class="subtitle">BASED IN DC</h3>
        <div class="arrow bounce">
-       <a class="fa fa-angle-down fa-4x" href="#work"></a>
+       <a class="fa fa-chevron-down fa-3x" href="#work"></a>
        </div>
-      </div>
      </header>
 
   <main>
@@ -95,9 +98,10 @@
 
 /** scroll animation **/
 
-   ScrollReveal().reveal('.flex-container-1');
-   ScrollReveal().reveal('.topnav');
-   ScrollReveal().reveal('.logo');
+   ScrollReveal().reveal('.logo', { duration: 2000 });
+   ScrollReveal().reveal('.nav-list', { interval: 200 });
+   ScrollReveal().reveal('header', { duration: 1000 });
+   ScrollReveal().reveal('article', { delay: 100 });
 
 /** click hamburger icon **/
 
