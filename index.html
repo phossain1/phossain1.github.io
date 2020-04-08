@@ -16,7 +16,7 @@
    </head>
    <body>
 
-     <nav id="navbar">
+     <nav>
          <div class="logo">
            <a href="./index.html">
            <img src="./images/logo.svg" alt="logo">
@@ -33,12 +33,17 @@
      </nav>
 
      <header>
+       <div class="full-height">
        <div class="clearfix">
        <h1>Pinky</h1>
        </div>
        <img src="./images/geodesign.svg" alt="geodesign">
-         <p>I’m a UX Designer, <br>and I’d love to help you tell your story.<br></p>
-         <h3 class="subtitle">BASED IN DC</h3>
+       <p>I’m a UX Designer, <br>and I’d love to help you tell your story.<br></p>
+       <h3 class="subtitle">BASED IN DC</h3>
+       <div class="arrow bounce">
+       <a class="fa fa-angle-down fa-4x" href="#work"></a>
+       </div>
+      </div>
      </header>
 
   <main>
@@ -86,21 +91,6 @@
    </footer>
 
    <script>
-
-   /**sticky nav**/
-
-   window.onscroll = function() {navFunction()};
-
-   var navbar = document.getElementById("navbar");
-   var sticky = navbar.offsetTop;
-
-   function navFunction() {
-     if (window.pageYOffset >= sticky) {
-       navbar.classList.add("sticky")
-     } else {
-       navbar.classList.remove("sticky");
-     }
-   }
 
 
 /** scroll animation **/
