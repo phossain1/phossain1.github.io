@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script>
+     ScrollReveal({ reset: true })
+    </script>
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Poppins">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet">
@@ -25,9 +28,9 @@
         <div class="topnav" id="myTopnav">
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
          <i class="fa fa-bars"></i>
-        <a href="./index.html#work" class="active">Work</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="./index.html#work" class="nav-list">Work</a>
+        <a href="#about" class="nav-list">About</a>
+        <a href="#contact" class="nav-list">Contact</a>
         </a>
      </div>
     </nav>
@@ -92,9 +95,11 @@
 
   /** scroll animation **/
 
-   ScrollReveal().reveal('.flex-container-1');
-   ScrollReveal().reveal('.topnav');
-   ScrollReveal().reveal('.logo');
+  ScrollReveal().reveal('.logo', { duration: 2000 });
+  ScrollReveal().reveal('.nav-list', { interval: 200 });
+  ScrollReveal().reveal('.header', { duration: 1000 });
+  ScrollReveal().reveal('footer', { duration: 1000 });
+
 
   /** click hamburger icon **/
 
