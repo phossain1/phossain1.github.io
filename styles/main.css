@@ -72,7 +72,7 @@ a { color: #373A36; text-decoration: none; }
 
 .arrow {
   text-align: center;
-  margin: 8% 0;
+  margin: 48px 0;
 }
 .bounce {
   -moz-animation: bounce 3s infinite;
