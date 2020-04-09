@@ -20,7 +20,6 @@
    <body>
 
      <nav>
-       <div class="navbar">
          <div class="logo">
            <a href="./index.html">
            <img src="./images/logo.svg" alt="logo">
@@ -34,16 +33,17 @@
          <a href="#contact" class="nav-list">Contact</a>
          </a>
        </div>
-       </div>
      </nav>
 
      <header>
        <div class="clearfix">
-       <h1>Pinky</h1>
+       <h1 class="delay">Pinky</h1>
        </div>
        <img src="./images/geodesign.svg" alt="geodesign">
-       <p>I’m a UX Designer, <br>and I’d love to help you tell your story.<br></p>
+       <p class="animation">I’m a UX Designer, <br>and I’d love to help you tell your story.<br></p>
+       <div class="animation">
        <h3 class="subtitle">BASED IN DC</h3>
+       </div>
        <div class="arrow bounce">
        <a class="fa fa-chevron-down fa-3x" href="#work"></a>
        </div>
@@ -98,9 +98,9 @@
 
 /** scroll animation **/
 
-   ScrollReveal().reveal('.logo', { duration: 2000 });
-   ScrollReveal().reveal('.nav-list', { interval: 200 });
    ScrollReveal().reveal('header', { duration: 1000 });
+   ScrollReveal().reveal('.delay', { delay: 1000 });
+   ScrollReveal().reveal('.animation', { duration: 1000 });
    ScrollReveal().reveal('article', { delay: 100 });
 
 /** click hamburger icon **/
