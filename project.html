@@ -39,7 +39,9 @@
 
       <header>
       <div class="clearfix">
+      <div class="scribble-logo">
        <img src="./images/scribblelogo.svg" alt="scribblelogo">
+      </div>
        <div class="title">
        <h1 div class="letter-spacing">Do your best work.</h1>
        </div>
@@ -437,9 +439,8 @@
 
    /**scroll reveal**/
 
-   ScrollReveal().reveal('.logo', { duration: 2000 });
-   ScrollReveal().reveal('.nav-list', { interval: 200 });
    ScrollReveal().reveal('header', { duration: 1000 });
+   ScrollReveal().reveal('.scribble-logo', { delay: 1000 });
    ScrollReveal().reveal('footer', { duration: 1000 });
 
 
