@@ -344,26 +344,34 @@ p, .toc li {
 
 /** section styling **/
 
-section {                       /** for case study **/
-  padding: 48px;
-  margin: auto;
+.container-homepage {                         /** for homepage **/
   text-align: left;
-  background-color: #f4f4f4;
-}
-
-article {                         /** for homepage **/
-  background-image: url("../images/triangles.svg");
-  background-repeat: no-repeat;
-  text-align: left;
-  background-color: #f4f4f4;
   padding-right: 48px;
   padding-left: 48px;
+  background: linear-gradient(180deg, rgba(253, 229, 74, 0.5) 0%, rgba(241, 213, 32, 0) 100%);
 }
+
+.container-homepage-2 {
+  text-align: left;
+  padding-right: 48px;
+  padding-left: 48px;
+  padding-bottom: 48px;
+  background: linear-gradient(180deg, rgba(251, 159, 153, 0.5) 0%, rgba(251, 159, 153, 0) 100%);
+}
+
 
 .flex-container-1 {
   margin-top: 48px;
   padding-top: 48px;
-  padding-bottom: 48px;
+}
+
+/** for case study **/
+
+section {
+  padding: 48px;
+  margin: auto;
+  text-align: left;
+  background-color: #f4f4f4;
 }
 
 .whitebox {
@@ -432,6 +440,7 @@ article {                         /** for homepage **/
 
 .typography {
   background-color: #011149;
+  margin-top: 32px;
   padding: 24px;
 }
 
@@ -441,7 +450,7 @@ article {                         /** for homepage **/
 
 .color-white-center {
   color: white;
-  text-align: center;
+  text-align: left;
 }
 
 /** bio section styling **/
@@ -694,6 +703,11 @@ footer {
     padding-top: 0px;
   }
 
+  footer p {
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+
 
 }
 
@@ -704,7 +718,7 @@ footer {
     margin-left: 180px;
     margin-right: 180px;
 }
-   .flex-container-1, .biography, .bio-background p {
+ .flex-container-1, .biography, .bio-background p {
      margin-left: 180px;
      margin-right: 180px;
 }
