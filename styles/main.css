@@ -140,6 +140,27 @@ h2 {        /**title headers**/
   padding-bottom: 0px;
 }
 
+/** blockquote styling **/
+
+.blockquote {
+  background: rgba(253, 229, 74, 0.5);;
+  border-left: 10px solid #011149;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+.blockquote:before {
+  color: #011149;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+.blockquote p {
+  display: inline;
+}
+
 .bio-spacing {
   padding-top: 48px;
   padding-bottom: 16px;
@@ -701,6 +722,7 @@ footer {
 
   .flex-container-2 {
     padding-top: 0px;
+    padding-bottom: 48px;
   }
 
   footer p {
@@ -718,7 +740,7 @@ footer {
     margin-left: 180px;
     margin-right: 180px;
 }
- .flex-container-1, .biography, .bio-background p {
+ .flex-container-1, .biography {
      margin-left: 180px;
      margin-right: 180px;
 }
@@ -734,10 +756,10 @@ footer {
 
   .flex-container-2 {
     padding: 0px;
+    padding-bottom: 48px;
   }
 
-  .bio-background {
-    padding: 0px;
+  .background {
   }
 
 /** competitive analysis **/
@@ -826,13 +848,14 @@ footer {
     width: 50%;
   }
 
-  .biography, .bio-background p {
+  .biography {
     margin-left: 180px;
     margin-right: 180px;
   }
 
   .flex-container-2 {
     padding-top: 0px;
+    padding-bottom: 48px;
   }
 
         /**case study**/
