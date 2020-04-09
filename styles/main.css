@@ -7,6 +7,12 @@ body {
   box-sizing: border-box;
 }
 
+/**prevent flickering on animations**/
+
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
 /** navigation bar **/
 
 nav {
