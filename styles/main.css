@@ -684,6 +684,10 @@ footer {
     flex-direction: column;
   }
 
+  .flex-container-2 {
+    padding-top: 0px;
+  }
+
 
 }
 
@@ -778,7 +782,6 @@ footer {
   margin-right: 80px;
 }
 
-
 }
 
 
@@ -797,15 +800,19 @@ footer {
     margin: 0 auto;
   }
 
-  .biography, .bio-background p {
-    margin-left: 400px;
-    margin-right: 400px;
-  }
-
   .flex-container-1 {
     margin: auto;
     margin-top: 48px;
     width: 50%;
+  }
+
+  .biography, .bio-background p {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+
+  .flex-container-2 {
+    padding-top: 0px;
   }
 
         /**case study**/
