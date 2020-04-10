@@ -70,6 +70,7 @@ nav {
 header {
   text-align: center;
   margin: 48px;
+  height: 100vh;
 }
 
 /**arrow styling in header**/
@@ -740,9 +741,14 @@ footer {
     margin-left: 180px;
     margin-right: 180px;
 }
- .flex-container-1, .biography {
+ .flex-container-1 {
      margin-left: 180px;
      margin-right: 180px;
+}
+
+.biography {
+  margin-left: 250px;
+  margin-right: 250px;
 }
 
 /** user surveys statistics **/
@@ -824,6 +830,11 @@ footer {
   margin-right: 80px;
 }
 
+.biography {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
 }
 
 
@@ -849,8 +860,8 @@ footer {
   }
 
   .biography {
-    margin-left: 180px;
-    margin-right: 180px;
+    margin-left: 300px;
+    margin-right: 300px;
   }
 
   .flex-container-2 {
