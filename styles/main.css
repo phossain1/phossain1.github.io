@@ -1,3 +1,11 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.auto-scroll {
+  scroll-behavior: auto;
+}
+
 body {
   text-align: center;
   color: #373A36;
@@ -257,34 +265,41 @@ p, .toc li {
 
 /** button + link styling **/
 
-.button a {
+.button {
   background-color: #011149;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
+  border-radius: 10px;
+  cursor: pointer;
   font-size: 20px;
   margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 10px;
+  padding: 15px 32px;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: inline-block;
+}
+
+.button {
+  border-color: #fb9f99;
+  color: #fff;
+  background-image: -webkit-linear-gradient(45deg, #fb9f99 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #fb9f99 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+.button:hover {
+  background-position: 0;
 }
 
 .button a:link {
-  text-decoration: none;
   color: white;
-  font-family: "Karla";
 }
 
 .button a:visited {
   color: white;
-}
-
-.button a:hover {
-  color: #FB9F99;
-}
-
-.button a:active {
-  color: #FDE54A;
 }
 
 
@@ -358,6 +373,7 @@ p, .toc li {
 
 .container-homepage {                         /** for homepage **/
   text-align: left;
+  padding-top: 0px;
   padding-right: 48px;
   padding-left: 48px;
   padding-bottom: 48px;
