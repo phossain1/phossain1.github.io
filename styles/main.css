@@ -184,6 +184,7 @@ h3 {         /** parts **/
   font-size: 18px;
   font-weight: normal;
   text-align: center;
+  padding-bottom: 0px;
 }
 
 h4  {   /** scribble typography styling **/
@@ -238,17 +239,6 @@ p, .toc li {
   padding-top: 32px;
 }
 
-/**footer styling**/
-
-.footer {
-  padding-top: 32px;
-  letter-spacing: 2px;
-}
-
-.footer-1 {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
 
 /**table of contents**/
 
@@ -370,6 +360,7 @@ p, .toc li {
   text-align: left;
   padding-right: 48px;
   padding-left: 48px;
+  padding-bottom: 48px;
   background: linear-gradient(180deg, rgba(253, 229, 74, 0.5) 0%, rgba(241, 213, 32, 0) 100%);
 }
 
@@ -663,19 +654,30 @@ ul.problem {
   font-size: 24px;
 }
 
+/** footer **/
+
+footer {
+  border-top: 2px solid #373A36;
+  padding: 32px;
+}
+
+.footer {
+  letter-spacing: 2px;
+}
+
+.footer-1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: normal;
+}
+
 .social-link {
-  margin: 8px;
+  margin-right: 12px;
   display: inline-block;
 }
 
 .social-link a {
   color: #373A36;
-}
-
-/** footer **/
-
-footer {
-  border-top: 2px solid #373A36;
 }
 
 /**media query for mobile**/
