@@ -146,19 +146,27 @@ h2 {        /**title headers**/
   padding-bottom: 32px;
 }
 
-.spacing, .biography p {      /** decreasing paragraph spacing in final thoughts **/
+.spacing {      /** decreasing paragraph spacing in final thoughts **/
   padding-bottom: 0px;
+}
+
+.biography p {
+	padding-bottom: 0px;
+	padding-top: 24px;
 }
 
 /** blockquote styling **/
 
 .blockquote {
-  background: rgba(253, 229, 74, 0.5);;
   border-left: 10px solid #011149;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
+	margin-top: 24px;
+  padding-left: 24px;
+	padding-top: 10px;
   quotes: "\201C""\201D""\2018""\2019";
+	font-size: 18px;
+	color: rgba(0, 0, 0, 0.54);
 }
+
 .blockquote:before {
   color: #011149;
   content: open-quote;
@@ -173,7 +181,6 @@ h2 {        /**title headers**/
 
 .bio-spacing {
   padding-top: 48px;
-  padding-bottom: 16px;
 }
 
 
@@ -237,6 +244,10 @@ p, .toc li {
 
 .fa-ul li {
   padding-bottom: 12px;
+}
+
+.list-spacing {
+	padding-bottom: 24px;
 }
 
 .fa-check-square {
@@ -494,17 +505,6 @@ section {
   padding: 48px;
 }
 
-.bio-background {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  margin-top: 32px;
-  background-color: #011149;
-  font-weight: bold;
-  border-radius: 10px;
-  text-align: left;
-  padding: 32px;
-}
-
 
 /** alignment styling **/
 
@@ -551,7 +551,6 @@ ul.problem {
   height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
-  margin-bottom: 32px;
 }
 
 .user-flows img {
