@@ -446,6 +446,8 @@ section {
 
 .row-comp-analysis { /** competitive analysis **/
   display: flex;
+	margin-bottom: 32px;
+	width: 90%;
 }
 
 .row-comp-analysis p { /** competitive analysis**/
@@ -475,7 +477,8 @@ section {
 
 .column-homepage-variations {
   flex: 40%;
-  padding: 5px;
+  padding: 8px;
+	margin-bottom: 8px;
 }
 
 .typography {
@@ -714,6 +717,7 @@ footer {
 
   .row-comp-analysis {
     flex-direction: column;
+		width: 100%;
   }
 
   .column-comp-analysis {
