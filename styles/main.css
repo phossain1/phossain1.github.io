@@ -454,7 +454,7 @@ section {
 .column-wireframes {
   flex: 40%;
   max-width: 100%;
-  padding-right: 24px;
+  padding-right: 16px;
 }
 
 .row-homepage-variations {
@@ -631,7 +631,7 @@ ul.problem {
   height: auto;
   border: 1px solid gray;
   border-radius: 10px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .usability-testing img {
