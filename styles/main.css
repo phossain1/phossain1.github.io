@@ -575,11 +575,19 @@ ul.problem {
   border-radius: 10px;
 }
 
-.wireframe-sketches img, .high-fidelity img, .column-homepage-variations img, .homepage-variations img {
+.high-fidelity img, .column-homepage-variations img, .homepage-variations img {
   width: 100%;
   height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
+}
+
+.wireframe-sketches img {
+	width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+	margin-bottom: 32px;
 }
 
 .user-flows img {
@@ -590,10 +598,11 @@ ul.problem {
   margin-bottom: 32px;
 }
 
-.column-comp-analysis img {
-  width: 70%;
-  margin-top: 32px;
-  margin-bottom: auto;
+.comp-analysis img {
+	width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
 }
 
 .scribble img {
@@ -782,6 +791,11 @@ footer {
   	width: 100%;
 	}
 
+	.biography {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
 
 }
 
@@ -798,8 +812,8 @@ footer {
 }
 
 .biography {
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 /** user surveys statistics **/
@@ -819,11 +833,6 @@ footer {
   .background {
   }
 
-/** competitive analysis **/
-
-  .comp-analysis {
-    padding-top: 32px;
-  }
 
 /** for colors in typogrpahy and branding **/
 
@@ -906,8 +915,8 @@ footer {
   }
 
   .biography {
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 25%;
+    margin-right: 25%;
   }
 
   .flex-container-2 {
