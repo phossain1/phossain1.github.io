@@ -470,21 +470,6 @@ section {
   padding: 5px;
 }
 
-.row-comp-analysis { /** competitive analysis **/
-  display: flex;
-	margin-bottom: 32px;
-	width: 90%;
-}
-
-.row-comp-analysis p { /** competitive analysis**/
-  width: 100%;
-  padding-left: 5px;
-}
-
-.column-comp-analysis {
-  flex: 33.33%;
-}
-
 .row-wireframes {
   display: flex;
   flex-wrap: wrap;
@@ -750,16 +735,6 @@ footer {
     line-height: 36px;
   }
 
-  .row-comp-analysis {
-    flex-direction: column;
-		width: 100%;
-  }
-
-  .column-comp-analysis {
-    width: 100%;
-    margin: 0 auto;
-  }
-
   .row-persona {
     flex-direction: column;
   }
@@ -798,8 +773,8 @@ footer {
 
 @media screen and (min-width: 800px) and (max-width: 1200px) {
   .container, header {
-    margin-left: 180px;
-    margin-right: 180px;
+    margin-left: 25%;
+    margin-right: 25%;
 }
  .flex-container-1 {
      margin-left: 180px;
@@ -814,8 +789,8 @@ footer {
 /** user surveys statistics **/
 
   .flex-container {
-    margin-left: 72px;
-    margin-right: 72px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   /** gets rid of extra padding **/
@@ -823,9 +798,6 @@ footer {
   .flex-container-2 {
     padding: 0px;
     padding-bottom: 48px;
-  }
-
-  .background {
   }
 
 
@@ -881,8 +853,8 @@ footer {
 @media screen and (min-width: 800px) and (max-width: 1024px) and (orientation: landscape) {
 
 .container {
-  margin-left: 80px;
-  margin-right: 80px;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 }
@@ -892,8 +864,8 @@ footer {
 
 @media screen and (min-width: 1200px) and (max-width: 1920px) {
   .flex-container {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
           /**homepage + bio**/
