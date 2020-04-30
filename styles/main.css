@@ -91,8 +91,8 @@ a { color: #373A36; text-decoration: none; }
   margin: 48px 0;
 }
 .bounce {
-  -moz-animation: bounce 3s infinite;
-  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
   animation: bounce 3s infinite;
 }
 
@@ -320,11 +320,11 @@ a.resume-link:active {
 .button {
   border-color: #fb9f99;
   color: #fff;
-  background-image: -webkit-linear-gradient(45deg, #fb9f99 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #fb9f99 50%, transparent 50%);
   background-image: linear-gradient(45deg, #fb9f99 50%, transparent 50%);
   background-position: 100%;
   background-size: 400%;
-  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
   transition: background 300ms ease-in-out;
 }
 .button:hover {
@@ -444,6 +444,7 @@ section {
   padding: 48px;
   margin: auto;
   text-align: left;
+	background-color: white;
 }
 
 .toc {
@@ -517,6 +518,7 @@ section {
   margin: auto;
   text-align: left;
   padding: 48px;
+	background-color: white;
 }
 
 
@@ -763,7 +765,7 @@ footer {
   }
 
 	.button {
-  	width: 100%;
+		width: 100%;
 	}
 
 
