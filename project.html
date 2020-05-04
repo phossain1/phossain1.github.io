@@ -176,21 +176,21 @@
         <div class="column-persona">
 
         <div class="saeeda">
-        <img src="./images/persona1.png" onclick="onClick(this)" id="persona" alt="persona1">
+        <img src="./images/persona1.png" onclick="onClick(this)" class="persona" alt="persona1">
         </div>
 
-          <div class="modal" onclick="this.style.display='none'">
+          <div id="myModal" class="modal" onclick="this.style.display='none'">
           <span class="close">&times;</span>
-          <img class="modal-content" id="img01">
+          <img class="modal-content" src="./images/persona1.png" alt="persona1" id="img01">
           </div>
 
         </div>
 
         <div class="column-persona">
-          <img src="./images/persona2.png" onclick="onClick(this)" id="persona" alt="persona2">
-          <div id="myModal" class="modal" onclick="this.style.display='none'">
+          <img src="./images/persona2.png" onclick="onClick(this)" class="persona" alt="persona2">
+          <div id="myModal2" class="modal" onclick="this.style.display='none'">
           <span class="close">&times;</span>
-          <img class="modal-content" id="img01">
+          <img class="modal-content" src="./images/persona2.png" alt="persona2" id="img02">
           </div>
         </div>
       </div>
@@ -426,8 +426,11 @@
    /** click on persona 1 **/
 
     function onClick(element) {
-    document.getElementsByClassName("img01").src = element.src;
-    document.getElementsByClassName("modal").style.display = "block";
+    document.getElementById("img01").src = element.src;
+    document.getElementById("img02").src = element.src;
+    // document.getElementsByClassName("persona").src = element.src;
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("myModal2").style.display = "block";
     }
 
     var span = document.getElementsByClassName("close")[0];
