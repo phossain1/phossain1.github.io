@@ -737,7 +737,6 @@ footer {
 
   .column-persona {
     width: 100%;
-    margin: 0 auto;
   }
 
   .saeeda img {
@@ -767,7 +766,7 @@ footer {
 		display:block;
 		text-align:center;
 	}
-	
+
 }
 
 /** query for case study + homepage margins desktop **/
