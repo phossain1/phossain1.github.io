@@ -179,7 +179,7 @@
         <img src="./images/persona1.png" onclick="onClick(this)" id="persona" alt="persona1">
         </div>
 
-          <div id="myModal" class="modal" onclick="this.style.display='none'">
+          <div class="modal" onclick="this.style.display='none'">
           <span class="close">&times;</span>
           <img class="modal-content" id="img01">
           </div>
@@ -426,8 +426,8 @@
    /** click on persona 1 **/
 
     function onClick(element) {
-    document.getElementById("img01").src = element.src;
-    document.getElementById("myModal").style.display = "block";
+    document.getElementsByClassName("img01").src = element.src;
+    document.getElementsByClassName("modal").style.display = "block";
     }
 
     var span = document.getElementsByClassName("close")[0];
