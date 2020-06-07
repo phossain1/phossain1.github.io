@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+ <html class="sr auto-scroll">
+   <head>
+     <title>Virtual Museum | Pinky</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163300198-1"></script>
+     <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+
+       gtag('config', 'UA-163300198-1');
+     </script>
+     <script src="https://unpkg.com/scrollreveal@4"></script>
+     <script>
+      ScrollReveal({ reset: true })
+     </script>
+     <link rel='icon' href='./images/favicon.svg' type='image/x-icon'/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet"
+     href="https://fonts.googleapis.com/css?family=Poppins">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet">
+     <link rel="stylesheet"
+     href="https://fonts.googleapis.com/css?family=Karla">
+     <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Nunito&display=swap" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="styles/reset.css">
+     <link rel="stylesheet" type="text/css" href="styles/main.css">
+   </head>
+   <body>
+     <nav>
+       <div class="navbar">
+         <div class="logo">
+           <a href="./index.html">
+           <img src="./images/logo.svg" alt="Portfolio logo">
+           </a>
+         </div>
+         <div class="topnav" id="myTopnav">
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+         <i class="fa fa-bars"></i>
+         </a>
+         <a href="./index.html#work">Work</a>
+         <a href="./bio.html">About</a>
+         <a target="blank" href="https://www.linkedin.com/in/monika-hossain/">LinkedIn</a>
+        </div>
+      </div>
+    </nav>
+
+      <header class="load-hidden">
+      <div class="clearfix">
+      <div class="vm-logo load-hidden">
+       <img src="./images/vm-logo.svg" alt="Virtual Museum logo">
+      </div>
+       <div class="title">
+       <h1 class="letter-spacing">Journey through the past.</h1>
+       </div>
+       <p>Immerse yourself in history with our unique exhibits and join <br>virtual discussions and events about the art and history world.</p>
+       <a target="blank" href="https://www.figma.com/file/WUJuZALISDChD0l6rOYF6l/virtual-museum-high-fidelity?node-id=75%3A0" class="button">View Figma Prototype</a>
+      </div>
+      <div class="arrow bounce">
+      <a class="fa fa-chevron-down fa-3x" href="#overview"></a>
+      </div>
+     </header>
+
+    <main>
+
+     <section class="whitebox">
+       <div class="container">
+       <h3 class="toc-header">Table of Contents</h3>
+       <ul class="toc">
+         <li><a href="#overview">Prologue: Overview</a>
+         <li><a href="#part-1">Part 1: Discovery + Resesearch</a>
+         <li><a href="#part-2">Part 2: Information Architecture</a>
+         <li><a href="#part-3">Part 3: Branding</a>
+         <li><a href="#part-4">Part 4: Visual Design + Prototype/Testing</a>
+         <li><a href="#part-5">Part 5: Final Thoughts</a>
+       </ul>
+       </div>
+     </section>
+
+     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+      <section id="overview">   <!--Roles + Deliverables start gray-->
+        <div class="container">
+        <div class="icons">  <!--pencil image-->
+        <img src="./images/tools-and-utensils.png" alt="Tools and utensils icon">
+        </div>
+        <h3>PROLOGUE: OVERVIEW</h3>
+        <h2>Roles + Deliverables + Tools</h2>
+        <p>I led the design of Virtual Musem’s platform (both the exhibits and website) on desktop applications, including efforts to improve the platform through user research, prototype mockups with Figma, and usability tests. Deliverables included images, icons, prototype mockups of the app, logos, and a style guide.</p>
+        </div>
+      </section>
+
+      <section class="whitebox">   <!--project overview-->
+        <div class="container">
+        <h2>What is Virtual Museum?</h2>
+        <p>Virtual Museum brings you high quality immersive experiences on a range of topics based on art and history. Explore anything from the history of vampiric lore to Pop Art on Virtual Museum. These exhibits are personal, interactive, and engaging. We will explore how I created the exhibit on Francisco Goya in this case study.</p>
+        <div class="dashboard">
+        <img src="./images/vm-exhibit.png" alt="Virtual Museum exhibit screen">
+        </div>
+        </div>
+      </section>
+
+      <section>  <!--problem + solution gray-->
+        <div class="container">
+        <div class="icons">
+        <img src="./images/strategy.png" alt="Strategy icon">
+        </div>
+        <h2>Problem</h2>
+        <p>Curious young professionals want interactive ways to experience art and culture from their homes.</p>
+        <div class="icons">
+        <img src="./images/success.png" alt="Success check icon">
+        </div>
+        <h2>+ Solution</h2>
+        <p>Curious young professionals can explore art and culture without leaving their homes with a virtual interactive museum on art and history.</p>
+        </div>
+      </section>
+
+      <section class="whitebox" id="part-1"> <!--discovery + research-->
+        <div class="container">
+        <h3>PART 1: DISCOVERY + RESEARCH</h3>
+        <h2>CHAPTER 1: The Survey</h2>
+        <p class="list-spacing">Using a survey I conducted of 16 participants, I found that the majority of users want the following interactive features in the exhibit:</p>
+        <ul class="fa-ul">
+          <li><span class="fa-li"><i class="fa fa-check-square"></i></span>Trivia questions asking about art or history concept</li>
+          <li><span class="fa-li"><i class="fa fa-check-square"></i></span>Open-ended questions asking about art or history concepts</li>
+        </ul>
+        <p>Almost all survey takers want to see how other people engage with the interactive features as well.</p>
+        <a target="blank" href="https://forms.gle/QtrfLpcNAiy4SRZ18" class="button">View Survey</a>
+        </div>
+      </section>
+
+      <div class="flex-container">
+        <h2 class="center">Interactive features</h2> <!--centered text in sections-->
+        <img src="./images/vm-statistic-1.svg" alt="100% of users want trivia questions">
+        <img src="./images/vm-statistic-2.svg" alt="60% of users want open-ended questions about art or history">
+        <img src="./images/vm-statistic-3.svg" alt="80% of users want to see how others interact with the online exhibit">
+      </div>
+
+      <section>
+      <div class="container">
+        <h2>CHAPTER 2: The Competitive Analysis</h2>
+        <p>A competitive analysis of Google Arts and Culture and the British Museum showed a lot of opportunities in the visual aspects of Virtual Museum.</p>
+        <div class="comp-analysis">
+        <img src="./images/google-arts-culture.png" alt="Competitive analysis screenshot for Google Arts and Culture exhibit on Mona Lisa">
+        </div>
+        <p class="spacing">Google Arts and Culture has a lot of fun, interactive, and informative content that inspired the Goya exhibit. Zooming in on certain features on a painting, the scroll journey, content readability, and engaging writing are things that Google Arts and Culture does well.</p>
+        <p>However, one drawback I noticed with Google Arts and Culture that could benefit Virtual Museum was offering content on a website rather than an app. Only offering content on an app could deter users.</p>
+
+        <div class="comp-analysis">
+        <img src="./images/british-museum-cards.png" alt="British Museum competitive analysis cards on homepage">
+        </div>
+        <p>British Museum’s card design and layout was a strength I used for the cards in Future and Past Exhibits.</p>
+
+        <a target="blank" href="https://docs.google.com/document/d/1itBdMufHyisepXNhJBU6C1hxhmEnnD7CTCxceCwnQsk/edit" class="button">View Competitive Analysis</a>
+      </div>
+      </section>
+
+      <section class="whitebox">
+        <div class="container">
+        <h2>The Persona</h2>
+        <p>The personas we mocked up were of two professionals interested in virtual museum exhibits to engage with other people and keep intellectually stimulated.</p>
+        <div class="persona">
+        <img src="./images/rawan2.jpg" class="persona-image" alt="Picture of Rawan for first persona">
+          <h2>Rawan</h2>
+          <p class="spacing blockquote">Just because we can’t leave our houses doesn’t mean we can’t enjoy art and culture.</p>
+          <p class="italicize spacing">Age: 24 / Profession: Analyst / Lives in DC area</p>
+          <p class="spacing bold">About</p>
+          <p class="spacing">Rawan is an Analyst at a company that works for the government. She lives in Sterling, Virginia.</p>
+      	  <p class="spacing">She works from home now during quarantine, but doesn’t mind the change of pace. She’s always been a bit of a homebody. Her work is all online anyway, and she meets with her coworkers daily on Zoom. In her free time she likes to read books, watch TV, browse the Internet, and catch up with friends.</p>
+          <p class="list-spacing bold">Motivations</p>
+          <ul class="fa-ul">
+            <li><span class="fa-li"><i class="fa fa-check-square"></i></span>Challenging self with knowledge</li>
+            <li><span class="fa-li"><i class="fa fa-check-square"></i></span>Keeping intellectually stimulated</li>
+          </ul>
+          <p class="list-spacing bold">Frustrations</p>
+          <ul class="fa-ul">
+            <li><span class="fa-li"><i class="fa fa-check-square"></i></span>More web interactions with exhibits</li>
+          </ul>
+          <p class="list-spacing bold">Goals</p>
+          <ul class="fa-ul">
+            <li><span class="fa-li"><i class="fa fa-check-square"></i></span>Interaction with art/history</li>
+            <li><span class="fa-li"><i class="fa fa-check-square"></i></span>Learning new facts in a fun way</li>
+          </ul>
+        </div>
+
+        <div class="persona">
+        <img src="./images/david2.png" class="persona-image" alt="Picture of David for second persona">
+        <h2>David</h2>
+          <p class="spacing blockquote">A virtual museum could be a good way to be intellectually stimulated while staying connected to other people during this time.</p>
+          <p class="italicize spacing">Age: 28 / Profession: Copywriter / Lives in LA</p>
+          <p class="spacing bold">About</p>
+          <p class="spacing">David is a copywriter at an ad agency living in Los Angeles. He’s originally from Richmond, Virginia and moved to LA in 2016. He works from home now during quarantine, and it was quite the adjustment for him. He was used to commuting to work every day, but is slowly getting the hang of remote working.</p>
+        	<p class="spacing">David can’t wait until the virus blows over. He misses going out to local eateries and hanging out with his friends. Nowadays he’s been catching up on his favorite Netflix shows and napping with his dog.</p>
+          <p class="list-spacing bold">Motivations</p>
+          <ul class="fa-ul">
+            <li><span class="fa-li"><i class="fa fa-check-square"></i></span>Engaging with other people</li>
+            <li><span class="fa-li"><i class="fa fa-check-square"></i></span>Keeping intellectually stimulated</li>
+          </ul>
+          <p class="list-spacing bold">Frustrations</p>
+          <ul class="fa-ul">
+            <li><span class="fa-li"><i class="fa fa-check-square"></i></span>Being isolated</li>
+          </ul>
+          <p class="list-spacing bold">Goals</p>
+          <ul class="fa-ul">
+            <li><span class="fa-li"><i class="fa fa-check-square"></i></span>Interaction with other people</li>
+            <li><span class="fa-li"><i class="fa fa-check-square"></i></span>Learning new facts in a fun way</li>
+          </ul>
+        </div>
+      <a target="blank" href="https://www.figma.com/file/21F23yAfyJiwzs2nH56gU5/Virtual-Exhibit-Personas?node-id=0%3A1" class="button">View Personas</a>
+      </div>
+    </section>
+
+     <section id="part-2">   <!--information architecture-->
+       <div class="container">
+       <h3>PART 2: INFORMATION ARCHITECTURE</h3>
+       <h2>CHAPTER 4: The User Stories</h2>
+       <p class="list-spacing">It was important to keep user stories as simple as possible since the product was about a user journey through art and history. Overcomplicating this would defeat the purpose of Virtual Museum. Simplicity as well as the needs I identified through personas, the survey, and competitive analysis produced the following user stories for the MVP:</p>
+       <ul class="fa-ul">
+         <li><span class="fa-li"><i class="fa fa-check-square"></i></span><span class="high-priority">high priority:</span> Entering exhibit</li>
+         <li><span class="fa-li"><i class="fa fa-check-square"></i></span><span class="high-priority">high priority:</span> Interaction based on trivia questions</li>
+         <li><span class="fa-li"><i class="fa fa-check-square"></i></span><span class="high-priority">high priority:</span> Interaction based on open-ended questions</li>
+         <li><span class="fa-li"><i class="fa fa-check-square"></i></span><span class="high-priority">high priority:</span> Interaction based on viewing other people’s responses</li>
+         <li><span class="fa-li"><i class="fa fa-check-square"></i></span><span class="medium-priority">medium priority:</span> Accessing future exhibits</li>
+       </ul>
+       <div class="padding-top">
+       <a target="blank" href="https://docs.google.com/spreadsheets/d/147TL7-R7DDpxbRbHgC0pUKGRaCPpOPGagYYxzYO7EmE/edit#gid=0" class="button">View All Stories</a>
+     </div>
+     </div>
+     </section>
+
+     <section class="whitebox">
+       <div class="container">
+       <h2>CHAPTER 5: The User Flows</h2>
+       <p class="spacing">User flows are based on the user stories I identified above. The one below shows an interaction based on open-ended questions.</p>
+       <p>I'm highlighting the open-ended questions in particular because it went through the most changes.</p>
+       <div class="user-flows">
+         <img src="./images/vm-user-flow.png" alt="Virtual Museum user flow for open-ended questions">
+       </div>
+       <a target="blank" href="https://whimsical.com/Q5YF1FVuEikKvXibAv71S1" class="button">View All User Flows</a>
+       </div>
+    </section>
+
+      <section>
+        <div class="container">
+        <h2>CHAPTER 6: The Wireframe Sketches</h2>
+        <p>The open-ended question wireframe went through the most adjustment. It made more sense for the open-ended questions to be included within the actual Goya exhibit rather than as another link in the Virtual Museum website, so I removed the Open-Ended section from the menu links.</p>
+        <div class="wireframe-sketches">
+        <img src="./images/vm-sketch.png" alt="Virtual Museum sketch for open-ended question wireframes">
+        </div>
+        </div>
+      </section>
+
+      <section class="whitebox">
+        <div class="container">
+        <h2>The Wireframes</h2>
+        <p>The wireframes reflect the ease of clicking into an exhibit and the overall playful yet educational atmosphere of Virtual Museum. The following are a few original wireframes. They've been altered slightly to fit in this case study.</p>
+        <div class="row">
+        <div class="column wireframes">
+          <img src="./images/vm-wf-exhibit.png" alt="Virtual Museum wireframes for Goya exhibit">
+        </div>
+        <div class="column wireframes">
+          <img src="./images/vm-wf-future.png" alt="Virtual Museum future exhibits wireframe">
+        </div>
+        <div class="column wireframes">
+          <img src="./images/vm-wf-past.png" alt="Virtual Museum wireframe for searching past exhibits">
+        </div>
+        <div class="column wireframes">
+          <img src="./images/vm-wf-calendar.png" alt="Virtual Museum wireframe for calendar">
+        </div>
+        <div class="column wireframes">
+          <img src="./images/vm-wf-open.png" alt="Virtual Museum wireframes for open-ended questions">
+        </div>
+        <p>I refined the wireframe sketch for open-ended questions to be more scroll oriented, but later realized that this page was unnecessary. The final mockup is in the next section.
+        </div>
+        <a target="blank" href="https://www.figma.com/file/ZJh5KADjt70CrkgAjWZrPI/virtual-museum?node-id=1661%3A2" class="button">View On Figma</a>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+        <h2>Hi-Fi Mockup for Open-Ended Questions</h2>
+        <p>You can see here that I included the questions in the actual exhibit rather than having the open-ended questions as a link on the Virtual Museum website. This made more sense because users don't have to click out of the exhibit to view other people's responses, which could have been disorienting.</p>
+        <div class="high-fidelity">
+          <img src="./images/vm-hf-open.png" alt="High-fidelity mockup for open-ended questions">
+        </div>
+      </div>
+     </section>
+
+      <section class="whitebox" id="part-3">  <!--branding-->
+        <div class="container">
+        <h3>PART 3: BRANDING</h3>
+        <h2>CHAPTER 8: The Logo + Colors + Typography</h2>
+        <p>Virtual Museum’s brand intersects art with technology. It combines the old with the new to transform experiences and make visitors engage more deeply with the exhibits.</p>
+        <div class="project-logo">
+        <img src="./images/vm-black-logo.svg" alt="Virtual Museum's black logo">
+        </div>
+        <p class="spacing">I chose the name Virtual Museum because to capture a real museum essence. Even though the tone of the site is lighthearted, the brand still conveys an academic feel. The logo draws upon classic museum logos that exist. It is sleek and minimal with a lot of authority.</p>
+        <p>The exhibits are fun and interactive, and the logo complements this by showing that the site is also a serious educational platform, like real museums. Playfair Display and  PT Mono complement each other. They show that there’s a place for technology and history to interact.</p>
+        <div class="project-logo">
+        <img src="./images/vm-white-logo.svg" alt="Virtual Museum's white logo ">
+        </div>
+        <p>The brand is two-fold: internal and external. The internal brand is sleek, minimal, and black and white so the exhibit branding can take precedence. This external color branding will be based on the specific exhibit at the time, but the typography stays the same.</p>
+
+        <h2>Internal + External Branding</h2>
+        <p>The internal branding, the branding for Virtual Museum's website, is minimalist to give precedence to the branding of the exhibits. "Chiaroscuro" and "Etching" are subtle enough to give more presence to the exhibits.</p>
+        <div class="colors">
+        <img src="./images/vm-colors.svg" alt="Internal brand colors for Virtual Museum">
+        </div>
+
+        <p>The external brand colors for the Goya exhibit come from some of his most popular paintings to match the atmosphere of the portraits that the exhibit showcases.</p>
+        <div class="colors">
+        <img src="./images/vm-exhibit-colors.svg" alt="External brand colors for Goya exhibit">
+        </div>
+
+        <div class="typography">
+        <h2 class="color-white-center">Typography</h2>
+        <p class="color-white">Virtual Museum’s typography merges modern aesthetics with classic styles to show that the past and present can play well together.</p>
+        <h4 class="alegreya">Alegreya</h4>
+        <h4 class="alegreya">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+          a b c d e f g h i j k l m n o p q r s t u v w x y z
+          0 1 2 3 4 5 6 7 8 9 ! ? . , ; ‘ “</h4>
+        <h5 class="nunito">Nunito</h5>
+        <h5 class="nunito">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+          a b c d e f g h i j k l m n o p q r s t u v w x y z
+          0 1 2 3 4 5 6 7 8 9 ! ? . , ; ‘ “</h5>
+        </div>
+        <a target="blank" href="https://www.figma.com/file/ZJh5KADjt70CrkgAjWZrPI/virtual-museum?node-id=1684%3A1" class="button">View Style Guide</a>
+        </div>
+      </section>
+
+
+      <section>  <!--visual design + prototyping-->
+        <div class="container" id="part-4">
+        <h3>PART 4: VISUAL DESIGN + PROTOTYPE/TESTING</h3>
+        <h2>CHAPTER 10: The High-Fidelity Mockups</h2>
+        <p class="list-spacing">I faced two big challenges when designing the mockups:</p>
+          <ul class="fa-ul padding">
+            <li><span class="fa-li"><i class="fa fa-check-square"></i></span>the scroll format of the Goya exhibit</li>
+            <li><span class="fa-li"><i class="fa fa-check-square"></i></span>the arrows to indicate the next screen (discussed in testing)</li>
+          </ul>
+        <div class="high-fidelity">
+        <img src="./images/vm-hf-scroll1.png" alt="First iteration of infinite scrolling journey">
+        <p>I originally wanted the user to infinitely scroll down the exhibit because it’s simple, easy, and they are used to scroll journeys. Figuring out how to format the scroll journey was the tricky part. Did users want the Goya exhibit to be one continuous page or did they want to take it page by page?</p>
+        <img src="./images/vm-hf-scroll2.png" alt="Second iteration of infinite scroll journey">
+        </div>
+        <p>In the end, I decided that scrolling page by page would make the information much easier to digest and not overwhelm users as much. This format also makes the interactive components like trivia more engaging.</p>
+        <div class="vm-mockups">
+        <img src="./images/vm-hf-scroll3.png" alt="Second iteration of infinite scroll journey continued">
+        <img src="./images/trivia.png" alt="Trivia mockups for Goya exhibit">
+        </div>
+        <a target="blank" href="https://www.figma.com/file/WUJuZALISDChD0l6rOYF6l/virtual-museum-high-fidelity?node-id=75%3A0" class="button">View On Figma</a>
+        </div>
+      </section>
+
+      <section class="whitebox">
+        <div class="container">
+        <h2>Virtual Museum Mockups</h2>
+        <p>Below you'll find some high-fidelity mockups for the Virtual Museum site. I slightly altered some of them to fit in this case study.</p>
+        <div class="row">
+        <div class="column high-fidelity-stack">
+          <img src="./images/hf-future-exhibits.png" alt="Virtual Museum hi-fi future exhibit mockup">
+        </div>
+        <div class="column high-fidelity-stack">
+          <img src="./images/hf-contact.png" alt="Virtual Museum hi-fi contact mockup">
+        </div>
+        <div class="column high-fidelity-stack">
+          <img src="./images/hf-calendar.png" alt="Virtual Museum calendar hi-fi mockup">
+        </div>
+        <div class="column high-fidelity-stack">
+          <img src="./images/hf-about.png" alt="Virtual Museum hi-fi mockup for about page">
+        </div>
+        <div class="column high-fidelity-stack">
+          <img src="./images/hf-past-exhibits.png" alt="Virtual Museum hi-fi mockup for past exhibits">
+        </div>
+        </div>
+        <a target="blank" href="https://www.figma.com/file/WUJuZALISDChD0l6rOYF6l/virtual-museum-high-fidelity?node-id=75%3A0" class="button">View On Figma</a>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+        <h2>Goya Exhibit Mockups</h2>
+        <p>Below you'll find some high-fidelity mockups for the Goya exhibit.</p>
+        <div class="row">
+        <div class="column high-fidelity-stack">
+          <img src="./images/hf-exhibit-3.png" alt="Goya exhibit mockup">
+        </div>
+        <div class="column high-fidelity-stack">
+          <img src="./images/hf-exhibit-4.png" alt="Goya exhibit mockup">
+        </div>
+        <div class="column high-fidelity-stack">
+          <img src="./images/hf-exhibit1.png" alt="Goya exhibit mockup">
+        </div>
+        <div class="column high-fidelity-stack">
+          <img src="./images/hf-exhibit2.png" alt="Goya exhibit mockup">
+        </div>
+        <div class="column high-fidelity-stack">
+          <img src="./images/hf-exhibit5.png" alt="Goya exhibit mockup">
+        </div>
+        </div>
+        <a target="blank" href="https://www.figma.com/file/WUJuZALISDChD0l6rOYF6l/virtual-museum-high-fidelity?node-id=75%3A0" class="button">View On Figma</a>
+        </div>
+      </section>
+
+      <section class="whitebox">
+        <div class="container">
+        <h2>CHAPTER 11: The Preference Test</h2>
+        <p class="list-spacing">Once I figured that it would be better for users to scroll page by page, I had to figure out how to situate them within the exhibit. How would they know which section they were on? What if they wanted to easily go back to the main Virtual Museum website? I preference tested three different formats to situate users:</p>
+        <ul class="fa-ul padding">
+          <li><span class="fa-li"><i class="fa fa-check-square"></i></span>a side menu that pops out once you click it</li>
+          <li><span class="fa-li"><i class="fa fa-check-square"></i></span>a stationary timeline on the side</li>
+          <li><span class="fa-li"><i class="fa fa-check-square"></i></span>a navbar that includes the Virtual Museum website</li>
+        </ul>
+        <div class="row">
+        <div class="column high-fidelity-stack">
+          <img src="./images/vm-exhibit-timeline.png" alt="Preference one for situating users in exhibit">
+        </div>
+        <div class="column high-fidelity-stack">
+          <img src="./images/vm-exhibit-navbar.png" alt="Preference two for situating users in exhibit">
+        </div>
+        <div class="column high-fidelity-stack">
+          <img src="./images/vm-exhibit-arrow.png" alt="Preference three for situating users in exhibit">
+        </div>
+        </div>
+        <p class="spacing">The side menu option proved to be the least obtrusive and most functional for users.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+        <h2>CHAPTER 12: The High-Fidelity Usability Testing</h2>
+        <p>In the original prototype before testing, I didn’t incorporate arrows to show users how to get to the next part because two arrows (one for the menu popout and one to indicate the next section) looked too busy.</p>
+        <div class="high-fidelity">
+        <img src="./images/vm-exhibit.png" alt="First exhibit mockup shows an arrow">
+        <p class="spacing">However, testing with Jessica showed me that an arrow was necessary. Because there were three arrows in the beginning to indicate to users that they must click or scroll to the next page, Jessica assumed that the side arrow was the arrow to use to go to the next page.</p>
+        <p>To fix this issue, I then incorporated a bottom arrow on each frame that you can see only once your mouse hovers over it.</p>
+        <div class="vm-mockups">
+        <img src="./images/vm-arrow1.png" alt="Exhibit mockup with arrow">
+        <img src="./images/vm-arrow2.png" alt="Exhibit mockup without arrow">
+        </div>
+        </div>
+        <a target="blank" href="https://www.figma.com/proto/WUJuZALISDChD0l6rOYF6l/virtual-museum-high-fidelity?node-id=75%3A1316&scaling=min-zoom" class="button">View Prototype</a>
+        </div>
+      </section>
+
+      <section class="whitebox" id="part-5">  <!--conclusion-->
+        <div class="container">
+        <div class="icons">
+        <img src="./images/light-bulb.png" alt="Lightbulb icon">
+        </div>
+        <h3>PART 5: FINAL THOUGHTS</h3>
+        <h2>CHAPTER 13: The Epilogue</h2>
+        <p class="spacing">Testing showed positive reactions towards the product. Users enjoyed the look, feel, and engaging content in the Goya exhibit. The trivia component was a success.</p>
+        <p class="spacing">Virtual Museum’s website was also well received. All three user testing showed that it was intuitive to use and explore through different exhibits.</p>
+        <p class="spacing">If I could redo some things with Virtual Museum, I would conduct more research around the audience, especially as they relate to the COVID-19 pandemic since more people are at home.</p>
+        <p>Figuring this out could be especially helpful for marketing and branding for Virtual Museum.</p>
+        <a href="./project.html" class="button">Previous Case Study</a>
+        </div>
+      </section>
+
+    </main>
+    <div class="clearfix">
+    <footer id="contact">
+     <h1 class="footer">Get in touch</h1>
+     <p class="footer-1">Let's connect on LinkedIn and talk design, or tell me what your favorite book is.</p>
+     <div class="social-link">
+     <a target="blank" href="https://www.linkedin.com/in/monika-hossain/">
+       <i class="fa fa-linkedin"></i>
+     </a>
+     </div>
+     <div class="social-link">
+     <a target="blank" href="mailto:monika.hossain27@gmail.com">
+       <i class="fa fa-envelope-square"></i>
+     </a>
+     </div>
+    </footer>
+    </div>
+
+   <script>
+
+   /**scroll reveal**/
+
+   ScrollReveal().reveal('header', { duration: 1000 });
+   ScrollReveal().reveal('.vm-logo', { delay: 1000 });
+   ScrollReveal().reveal('.toc-header', { delay: 100 });
+   ScrollReveal().reveal('.toc', { delay: 100 });
+
+
+    /**go to top button**/
+
+    var mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+}
+
+     /** click hamburger icon **/
+
+     function myFunction() {
+       var x = document.getElementById("myTopnav");
+       if (x.className === "topnav") {
+         x.className += " responsive";
+       } else {
+         x.className = "topnav";
+       }
+     }
+  </script>
+
+ </body>
+ </html>
