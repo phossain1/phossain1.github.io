@@ -110,7 +110,6 @@ a { color: #373A36; text-decoration: none; }
 
 /**header image**/
 
-
 .geodesign {
   margin-left: auto;
   margin-right: auto;
@@ -121,20 +120,46 @@ a { color: #373A36; text-decoration: none; }
   padding-top: 48px;
 }
 
-/** typography **/
+/** portfolio typography **/
 
-h1 {          /** "Pinky" **/
+p, .toc li {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-size: 20px;
+  font-family: "Karla";
+  line-height: 32px;
+  color: #373A36
+}
+
+/** "Pinky" **/
+
+h1 {
   color: #373A36;
   font-family: 'Poppins', sans-serif;
   font-size: 34px;
   font-weight: 800;
 }
 
-.letter-spacing {         /**letter spacing for "do your best work"**/
+/** based in dc **/
+
+.subtitle {
+  font-family: "Karla";
+  color: #373A36;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  padding-bottom: 0px;
+}
+
+/**letter spacing for case study subheader ("do your best work")**/
+
+.letter-spacing {
   letter-spacing: 1px;
 }
 
-h2 {        /**title headers**/
+/**main header in case study**/
+
+h2 {
   text-align: left;
   font-size: 30px;
   font-family: "Poppins", sans-serif;
@@ -142,13 +167,19 @@ h2 {        /**title headers**/
   color: #373A36;
 }
 
-.padding  {       /** spacing in "chapter 2" **/
+/** increase or decrease spacing **/
+
+.padding  {
   padding-bottom: 32px;
 }
 
-.spacing {      /** decreasing paragraph spacing in final thoughts **/
+ /** decreasing paragraph spacing **/
+
+.spacing {
   padding-bottom: 0px;
 }
+
+/** biography paragraph spacing + styling **/
 
 .biography p {
 	padding-bottom: 0px;
@@ -175,6 +206,7 @@ h2 {        /**title headers**/
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
+
 .blockquote p {
   display: inline;
 }
@@ -183,7 +215,9 @@ h2 {        /**title headers**/
   padding-top: 48px;
 }
 
-h3 {         /** parts **/
+ /** parts **/
+
+h3 {
   text-align: left;
   font-family: "Karla";
   font-weight: normal;
@@ -192,16 +226,9 @@ h3 {         /** parts **/
   padding-bottom: 48px;
 }
 
-.subtitle {   /** based in dc **/
-  font-family: "Karla";
-  color: #373A36;
-  font-size: 18px;
-  font-weight: normal;
-  text-align: center;
-  padding-bottom: 0px;
-}
+/** scribble + vm typography styling **/
 
-h4  {   /** scribble typography styling **/
+h4  {
   text-align: left;
   font-family: "Libre Baskerville", serif;
   font-weight: normal;
@@ -210,7 +237,16 @@ h4  {   /** scribble typography styling **/
   color: white;
 }
 
-h5 {  /** scribble typography styling **/
+.alegreya {
+	text-align: left;
+  font-family: "Alegreya", serif;
+  font-weight: normal;
+  font-size: 24px;
+  padding-bottom: 32px;
+  color: white;
+}
+
+h5 {
   text-align: left;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
@@ -219,14 +255,16 @@ h5 {  /** scribble typography styling **/
   color: white;
 }
 
-p, .toc li {
-  padding-top: 32px;
+.nunito {
+	text-align: left;
+  font-family: "Nunito", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
   padding-bottom: 32px;
-  font-size: 20px;
-  font-family: "Karla";
-  line-height: 32px;
-  color: #373A36
+  color: white;
 }
+
+/**table of contents**/
 
 .toc-header {
   text-align: center;
@@ -234,7 +272,30 @@ p, .toc li {
   padding-bottom: 0;
 }
 
+.toc li a:hover {
+  color: #FB9F99;
+}
+
+.toc li a:link {
+  color: #373A36;
+  text-decoration: underline;
+}
+
+.toc li a:active {
+  color: #FDE54A;
+}
+
+.toc {
+  padding-top: 16px;
+}
+
+.toc li {
+  padding: 12px;
+  text-align: center;
+}
+
 /** resume link styling **/
+
 a.resume-link:hover {
 	color: #FB9F99;
 }
@@ -248,7 +309,7 @@ a.resume-link:active {
   color: #FDE54A;
 }
 
-/** list styling in user stories and high fid mockups **/
+/** list styling **/
 
 .fa-ul {
   font-family: "Karla", sans-serif;
@@ -285,22 +346,7 @@ a.resume-link:active {
 }
 
 
-/**table of contents**/
-
-.toc li a:hover {
-  color: #FB9F99;
-}
-
-.toc li a:link {
-  color: #373A36;
-  text-decoration: underline;
-}
-
-.toc li a:active {
-  color: #FDE54A;
-}
-
-/** button + link styling **/
+/** buttons **/
 
 .button {
   background-color: #011149;
@@ -316,7 +362,7 @@ a.resume-link:active {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: inline-block;
 }
-
+						/** button animation**/
 .button {
   border-color: #fb9f99;
   color: #fff;
@@ -324,8 +370,8 @@ a.resume-link:active {
   background-image: linear-gradient(45deg, #fb9f99 50%, transparent 50%);
   background-position: 100%;
   background-size: 400%;
-  transition: background 300ms ease-in-out;
-  transition: background 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 .button:hover {
   background-position: 0;
@@ -340,40 +386,11 @@ a.resume-link:active {
 }
 
 
-/** last buttons (next) **/
+/** previous + next buttons **/
 
-.button-right {
-  text-align: right;
-}
-
-.button-right a {
-  background-color: #011149;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 20px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.button-right a:link {
-  text-decoration: none;
+.next {
+  background-color: #4CAF50;
   color: white;
-  font-family: "Karla";
-}
-
-.button-right a:visited {
-  color: white;
-}
-
-.button-right a:hover {
-  color: #FB9F99;
-}
-
-.button-right a:active {
-  color: #FDE54A;
 }
 
 /** go to top button **/
@@ -406,9 +423,10 @@ a.resume-link:active {
   clear: both;
 }
 
-/** section styling **/
 
-.container-homepage {                         /** for homepage **/
+/** homepage containers **/
+
+.container-homepage {
   text-align: left;
   background: linear-gradient(180deg, rgba(253, 229, 74, 0.5) 0%, rgba(241, 213, 32, 0) 100%);
 }
@@ -421,7 +439,13 @@ a.resume-link:active {
 .flex-container-1 {
 }
 
-/** for case study **/
+.flex-container {
+  flex-direction: row;
+  display: inline-block;
+  padding-bottom: 48px;
+}
+
+/** section styling **/
 
 section {
   padding: 48px;
@@ -437,55 +461,49 @@ section {
 	background-color: white;
 }
 
-.toc {
-  padding-top: 16px;
+
+/** personas **/
+
+.persona {
+  width: 100%;
+  height: auto;
+	margin-bottom: 32px;
+	padding-bottom: 32px;
+	border-bottom: solid 1px gray;
 }
 
-.toc li {
-  padding: 12px;
-  text-align: center;
+.italicize {
+	font-style: italic;
 }
 
-.flex-container {
-  flex-direction: row;
-  display: inline-block;
-  padding-bottom: 48px;
+.bold {
+	font-weight: 600;
+	text-decoration: underline;
 }
 
-.row-persona { /** personas **/
-  display: flex;
+.persona h2 {
+	padding-top: 24px;
 }
 
-.column-persona { /** personas **/
-  flex: 33.33%;
-  padding: 5px;
-}
+/**row + columns for preference testing, wireframes, mockups**/
 
-.row-wireframes {
+.row {
   display: flex;
   flex-wrap: wrap;
 }
 
-.column-wireframes {
+.column {
   flex: 40%;
   max-width: 100%;
   padding-right: 16px;
 }
 
-.row-homepage-variations {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.column-homepage-variations {
-  flex: 40%;
-  padding: 8px;
-	margin-bottom: 8px;
-}
+/**typography section in branding**/
 
 .typography {
   background-color: #011149;
   margin-top: 32px;
+	margin-bottom: 32px;
   padding: 24px;
 }
 
@@ -504,7 +522,9 @@ section {
   margin-top: 100px;
 }
 
-.flex-container-2 {               /**margins for about **/
+/**margins for bio **/
+
+.flex-container-2 {
   margin: auto;
   text-align: left;
   padding: 48px;
@@ -512,19 +532,7 @@ section {
 }
 
 
-/** alignment styling **/
-
-
-ul.problem {
-  list-style-type: disc;
-  list-style-position: inside;
-  padding-bottom: 32px;
-  font-size: 20px;
-  font-family: "Karla";
-  line-height: 32px;
-  color: #373A36
-  display: block;
-}
+/** alignment for statistics **/
 
 .center {
   text-align: center;
@@ -532,34 +540,28 @@ ul.problem {
 
 /** images **/
 
-.projectphotos img {
-  width: 100%;
-  height: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 10px;
-}
-
 .icons img {
   width: 128px;
   height: auto;
   padding-bottom: 32px;
 }
 
-.dashboard img  {
+.dashboard img, .projectphotos img, .high-fidelity img, .comp-analysis img  {
   width: 100%;
   height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
 }
 
-.high-fidelity img, .column-homepage-variations img, .homepage-variations img {
-  width: 100%;
-  height: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 10px;
+.high-fidelity-stack img {
+	width: 100%;
+	height: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 10px;
+	margin-bottom: 16px;
 }
 
-.wireframe-sketches img {
+.wireframe-sketches img, .vm-mockups img, .user-flows img {
 	width: 100%;
   height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -567,80 +569,12 @@ ul.problem {
 	margin-bottom: 32px;
 }
 
-.user-flows img {
-  width: 100%;
-  height: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 10px;
-  margin-bottom: 32px;
-}
-
-.comp-analysis img {
-	width: 100%;
-  height: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 10px;
-}
-
-.scribble img {
+.project-logo img, .persona-image {
   width: 100%;
   height: auto;
 }
 
-.column-persona img {
-  width: 100%;
-  height: auto;
-}
-
-/** clicking on persona images **/
-
-.persona {
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.persona:hover {opacity: 0.7;}
-
-#myModal {
-	z-index: 2;
-	display: none;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.9);
-}
-
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 500px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.column-wireframes img {
+.wireframes img {
   width: 100%;
   height: auto;
   border: 1px solid gray;
@@ -672,7 +606,6 @@ ul.problem {
   margin-right: auto;
   width: 50%;
 }
-
 
 /** icons **/
 
@@ -727,23 +660,15 @@ footer {
     line-height: 36px;
   }
 
-	.column-wireframes {
+	.column {
 		width: 100%;
 	}
 
-  .row-persona {
-    flex-direction: column;
-  }
+	.vm-persona {
+		width:100%;
+	}
 
-  .column-persona {
-    width: 100%;
-  }
-
-  .saeeda img {
-    padding-bottom: 32px;
-  }
-
-  .row-wireframes {
+  .row {
     flex-direction: column;
   }
 
@@ -793,7 +718,7 @@ footer {
     margin-right: 10%;
   }
 
-  /** gets rid of extra padding **/
+/** gets rid of extra padding **/
 
   .flex-container-2 {
     padding: 0px;
@@ -857,6 +782,10 @@ footer {
   margin-right: 25%;
 }
 
+br {
+	display: none;
+}
+
 }
 
 
@@ -868,7 +797,7 @@ footer {
     margin-right: 10%;
   }
 
-          /**homepage + bio**/
+/**homepage + bio**/
 
   .projectphotos {
     width: 100%;
@@ -891,22 +820,11 @@ footer {
     padding-bottom: 48px;
   }
 
-        /**case study**/
+  /**case study**/
 
   .container {
     width: 50%;
     margin: 0 auto;
-  }
-
-  .row-persona { /** personas **/
-    display: flex;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .column-persona { /** personas **/
-    flex: 33.33%;
-    padding: 5px;
   }
 
 }
