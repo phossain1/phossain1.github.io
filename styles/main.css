@@ -553,6 +553,14 @@ section {
   border-radius: 10px;
 }
 
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
 .high-fidelity-stack img {
 	width: 100%;
 	height: auto;
